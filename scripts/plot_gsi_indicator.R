@@ -16,7 +16,7 @@ plt_indicator_gsi <- function(data) {
     dplyr::group_by(INDICATOR_NAME) |>
     dplyr::mutate(mean = mean(DATA_VALUE, na.rm = TRUE),
                   sd = sd(DATA_VALUE, na.rm = TRUE)) |>
-    ggplot2::ggplot(ggplot2::aes(x = YEAR,
+    ggplot2::ggplot(ggplot2::aes(x = as.numeric(YEAR),
                                  y = avg
     )) +
     ggplot2::geom_hline(ggplot2::aes(
