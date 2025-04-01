@@ -1,7 +1,21 @@
+### Project name: Longfin ESP Report Card
+### Code purpose: Plot Gulf Stream Indicator
+
+### Author: Stephanie Owen
+### Date started: 4/1/25
+
+### Code reviewer:
+### Date reviewed:
+
+# Libraries & functions ----
 `%>%` <- magrittr::`%>%`
 
+# Data ----
 data <- ecodata::gsi
 
+# Analyses ----
+
+##run gsi function
 create_gsi <- function(data){
   gsi <- data |>
     tidyr::separate(Time, c("Year", "Month"), sep = "\\.")
@@ -9,6 +23,7 @@ create_gsi <- function(data){
   return(gsi)
 }
 
+##modify data
 gsi <- create_gsi(data) %>%
   dplyr::filter(Var == 'western gulf stream index') %>%
   dplyr::rename(INDICATOR_NAME = Var,
@@ -17,8 +32,7 @@ gsi <- create_gsi(data) %>%
   dplyr::group_by(YEAR) %>%
   dplyr::mutate(avg = mean(DATA_VALUE))
 
-plt_indicator_gsi(gsi)
-
+##run plot function
 plt_indicator_gsi <- function(data) {
   plt <- data |>
     dplyr::group_by(INDICATOR_NAME) |>
@@ -58,3 +72,6 @@ plt_indicator_gsi <- function(data) {
   
   return(plt)
 }
+
+##plot
+plt_indicator_gsi(gsi)
