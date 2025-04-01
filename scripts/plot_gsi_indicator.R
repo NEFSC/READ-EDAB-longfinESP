@@ -1,8 +1,16 @@
 `%>%` <- magrittr::`%>%`
 
 data <- ecodata::gsi
+
+create_gsi <- function(data){
+  gsi <- data |>
+    tidyr::separate(Time, c("Year", "Month"), sep = "\\.")
+  
+  return(gsi)
+}
+
 gsi <- create_gsi(data) %>%
-  dplyr::filter(Var == 'gulf stream index') %>%
+  dplyr::filter(Var == 'western gulf stream index') %>%
   dplyr::rename(INDICATOR_NAME = Var,
                 YEAR = Year,
                 DATA_VALUE = Value) %>%
