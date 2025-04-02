@@ -1,12 +1,12 @@
 ---
-title: "Black Sea Bass (\\protect\\textit{Centropristis striata}) \\protect\\newline Ecosystem & Socioeconomic Profile Report Card"
+title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\protect\\newline Ecosystem & Socioeconomic Profile Report Card"
 format: 
   pdf:
     margin-left: "0.5in"
     margin-right: "0.5in"
     margin-top: "0in"
     margin-bottom: "0.5in"
-    fontsize: "10pt"
+    fontsize: "8pt"
     linestretch: 1
     indent: true
     include-in-header: template.tex    
@@ -14,11 +14,11 @@ format:
     papersize: letter
 params:
   widths: !expr c(0.9, 0.75, 3, 3)
-  img1: !expr here::here("inst/esp_template/05_images/noaa_logo.png")
-  img2: !expr here::here("inst/esp_template/05_images/noaa_logo.png")
-  img3: !expr here::here("inst/esp_template/05_images/noaa_logo.png")
-  tbl_file: !expr here::here("inst/esp_template/06_docs/table_template.xlsx")
-  img_dir: !expr here::here("inst/esp_template/05_images")
+  img1: !expr here::here("images/conceptual_model.jpg")
+  img2: !expr here::here("images/risk_chart.png")
+  img3: !expr here::here("images/noaa_logo.png")
+  tbl_file: !expr here::here("docs/table_template.xlsx")
+  img_dir: !expr here::here("images")
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -33,13 +33,11 @@ devtools::load_all()
  }
 \BgThispage
 
-\vspace{-2.5cm}
+\vspace{-1.5cm}
 
-\section{Spring 2024}
+\section{Spring 2026}
 
-Black sea bass is an important Mid-Atlantic stock with high commercial value and recreational engagement. There are two stock subunits, divided at the Hudson Canyon. Overfishing is not occurring and the stock is not overfished. The stock assessment model uses winter bottom temperature as a recruitment covariate to incorporate the observed link between cold temperature and smaller year classes.
-
-:::: {layout="[ [0.4, 0.025, 0.575], [1], [0.575, 0.025, 0.4]] "}
+:::: {layout="[ [0.6, 0.4]] "}
 
 ::: {}
 ![](`r params$img1`)
@@ -50,26 +48,19 @@ Black sea bass is an important Mid-Atlantic stock with high commercial value and
 :::
 
 ::: {}
-\section{2024 in Review}
+\section{Key Findings from the Life History Working Group}
 
-\subsection{Fishing Community Observations}
-- Steady or increasing availability 
-- Expanding distributions and changes in migration timing
-- Local regulatory complexity affects fishing opportunities
+\subsection{Lifespan and aging}
+- Hypothesis of 1 statolith ring/day is well-established but includes some uncertainty of aging error if daily statolith increments are incorrect. Discussions from the longfin squid summit estimate a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging of longfin squid in the SQUIBS dataset - assuming 1 statolith ring/day - indicate maximum ages of ~7 months for females and ~8.6 months for males.
 
-\subsection{Commercial Fishery}
-- Number of active vessels declined in 2024, but total landings increased from 2023 
-- Total revenue decreased slightly along with average prices ($/lb)
-- Average revenue per vessel increased, following an upward trend over the past three years for vessels that remain in the fishery
+\subsection{Migration and movement dynamics}
+- Previous literature suggests the possibility of a “winter cohort” of longfin squid that hatch south of Cape Hatteras and subsequently migrate onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm ML squid from waters south of Hatteras through the Mid-Atlantic and southern New England, with the smallest squid detected further south. Dr. David Richardson proposed a mechanism for this migration hypothesis in which the recruitment transport of juvenile squid from winter hatching grounds on the Southeast U.S. shelf is facilitated by the Gulf Stream and warm core rings.
 
-\subsection{Recreational Fishery}
-- Number of targeted trips, catch, and landings all down from 2023
-- But number of trips still above the historic average 
-- Not clear if catch per angler has continued to increase in 2024
+\subsection{Reproductive dynamics}
+- Traditionally, longfin squid were thought to spawn in two distinct cohorts: spring and summer/fall. Consideration of the hypothesis of a winter cohort spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock. 
 
-\subsection{Ecosystem}
-- Cold winter in the north but near average in the south
-- Poor or below average fish condition in recent years
+\subsection{Natural mortality}
+- Potential relationships between natural morality and longfin inshore squid differ by age and life stage; however, quantifying these relationships is complex and is dependent on accurate age and life cycle estimates. It is likely that multiple natural mortality approximations will need to be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality in longfin squid, but methods are not currently available to directly quantify
 :::
 
 ::: {}
@@ -82,20 +73,15 @@ Black sea bass is an important Mid-Atlantic stock with high commercial value and
 
 \raggedright
 <!-- maybe this is being centered because it's the only section without a header? -->
-According to the [Mid-Atlantic 2024 EAFM risk assessment update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/6747560a3cf66936045e5547/1732728332670/05_EAFM+Risk+Assessment.pdf), Black Sea Bass scored high and/or moderately high risk in the following elements:
+In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf), longfin squid scored moderate-high risk in the following elements:
 
-- Moderate-high to high risk to the stock due to:
-  - Very high exposure to changes in climate 
-  - Observed and potential changes in distribution; northward shift into the Gulf of Maine
-  - Dependence on threatened estuarine habitat
-  - Decline in the biomass of benthic invertebrate prey 
-  - Decline in black sea bass body condition in the Mid Atlantic Bight
-- High risk to the recreational fishery due to:
-  - Catch exceeding harvest limits in several years
-  - High regulatory complexity; frequent changes and varying interstate regulations; regulatory changes in allocations
+- Moderate-high risk to the stock due to:
+  - High potential for and observed distribution shifts  
 - Moderate-high risk to the commercial fishery due to:
-  - Commercial revenue in wind development areas 
-  - High discards & discard mortality
+  - Risk of not achieving optimum yield due to interactions with non-Council managed species
+  - Occasional recent changes in regulations; moderate (3-4) recreational regulation differences across states
+  - Regular discards and incidental catch but managed; moderate discard mortality
+
 
 :::
 
@@ -105,7 +91,6 @@ According to the [Mid-Atlantic 2024 EAFM risk assessment update](https://static1
 
 ::: {}
 ![](`r params$img2`)
-![](`r params$img3`)
 :::
 
 ::::
