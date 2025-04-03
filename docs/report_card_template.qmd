@@ -37,7 +37,7 @@ devtools::load_all()
 
 \section{Spring 2026}
 
-:::: {layout="[ [0.6, 0.4]] "}
+:::: {layout="[ [0.6, 0.025, 0.375], [0.6, 0.025, 0.375]] "}
 
 ::: {}
 ![](`r params$img1`)
@@ -46,6 +46,22 @@ devtools::load_all()
 ::: {}
 \hfill
 :::
+
+::: {}
+\section{Key Points from the Mid-Atlantic Risk Assessment}
+
+\raggedright
+<!-- maybe this is being centered because it's the only section without a header? -->
+In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf), longfin squid scored moderate-high risk in the following elements:
+
+- Moderate-high risk to the stock due to:
+  - High potential for and observed distribution shifts  
+- Moderate-high risk to the commercial fishery due to:
+  - Risk of not achieving optimum yield due to interactions with non-Council managed species
+  - Occasional recent changes in regulations; moderate (3-4) recreational regulation differences across states
+  - Regular discards and incidental catch but managed; moderate discard mortality
+:::
+
 
 ::: {}
 \section{Key Findings from the Life History Working Group}
@@ -61,28 +77,6 @@ devtools::load_all()
 
 \subsection{Natural mortality}
 - Potential relationships between natural morality and longfin inshore squid differ by age and life stage; however, quantifying these relationships is complex and is dependent on accurate age and life cycle estimates. It is likely that multiple natural mortality approximations will need to be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality in longfin squid, but methods are not currently available to directly quantify
-:::
-
-::: {}
-\vspace{0.5cm}
-\section{Key Points from the Mid-Atlantic Risk Assessment}
-:::
-
-::: {}
-\vspace{-3cm}
-
-\raggedright
-<!-- maybe this is being centered because it's the only section without a header? -->
-In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf), longfin squid scored moderate-high risk in the following elements:
-
-- Moderate-high risk to the stock due to:
-  - High potential for and observed distribution shifts  
-- Moderate-high risk to the commercial fishery due to:
-  - Risk of not achieving optimum yield due to interactions with non-Council managed species
-  - Occasional recent changes in regulations; moderate (3-4) recreational regulation differences across states
-  - Regular discards and incidental catch but managed; moderate discard mortality
-
-
 :::
 
 ::: {}
