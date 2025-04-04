@@ -16,7 +16,8 @@ params:
   widths: !expr c(0.9, 0.75, 3, 3)
   img1: !expr here::here("images/conceptual_model.jpg")
   img2: !expr here::here("images/risk_chart.png")
-  img3: !expr here::here("images/noaa_logo.png")
+  img3: !expr here::here("images/squibs_data.png")
+  img4: !expr here::here("images/noaa_logo.png")
   tbl_file: !expr here::here("docs/table_template.xlsx")
   img_dir: !expr here::here("images")
 ---
@@ -37,28 +38,36 @@ devtools::load_all()
 
 \section{Spring 2026}
 
-::::: {layout="[ [0.6, 0.05, 0.45]] "}
+::::: {layout="[ [0.6, 0.025, 0.475]] "}
 
 :::: {}
-:::{}
-![](`r params$img1`)
-:::
 
 :::{}
 \section{Key Findings from the Life History Working Group}
 
 \subsection{Lifespan and aging}
-- Hypothesis of 1 statolith ring/day is well-established but includes some uncertainty of aging error if daily statolith increments are incorrect. Discussions from the longfin squid summit estimate a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging of longfin squid in the SQUIBS dataset - assuming 1 statolith ring/day - indicate maximum ages of ~7 months for females and ~8.6 months for males.
+Hypothesis of 1 statolith ring/day is well-established but includes some uncertainty of aging error if daily statolith increments are incorrect. Discussions from the longfin squid summit estimate a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging of longfin squid in the SQUIBS dataset (right) - assuming 1 statolith ring/day - indicate maximum ages of ~7 months for females and ~8.6 months for males.
+
+\vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
-- Previous literature suggests the possibility of a “winter cohort” of longfin squid that hatch south of Cape Hatteras and subsequently migrate onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm ML squid from waters south of Hatteras through the Mid-Atlantic and southern New England, with the smallest squid detected further south. Dr. David Richardson proposed a mechanism for this migration hypothesis in which the recruitment transport of juvenile squid from winter hatching grounds on the Southeast U.S. shelf is facilitated by the Gulf Stream and warm core rings.
+Previous literature suggests the possibility of a “winter cohort” of longfin squid that hatch south of Cape Hatteras and subsequently migrate onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm ML squid from waters south of Hatteras through the Mid-Atlantic and southern New England, with the smallest squid detected further south. Dr. David Richardson proposed a mechanism for this migration hypothesis in which the recruitment transport of juvenile squid from winter hatching grounds on the Southeast U.S. shelf is facilitated by the Gulf Stream and warm core rings.
+
+\vspace{0.25cm}
 
 \subsection{Reproductive dynamics}
-- Traditionally, longfin squid were thought to spawn in two distinct cohorts: spring and summer/fall. Consideration of the hypothesis of a winter cohort spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock. 
+Traditionally, longfin squid were thought to spawn in two distinct cohorts: spring and summer/fall. Consideration of the hypothesis of a winter cohort spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock. 
+
+\vspace{0.25cm}
 
 \subsection{Natural mortality}
-- Potential relationships between natural morality and longfin inshore squid differ by age and life stage; however, quantifying these relationships is complex and is dependent on accurate age and life cycle estimates. It is likely that multiple natural mortality approximations will need to be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality in longfin squid, but methods are not currently available to directly quantify
+Potential relationships between natural morality and longfin inshore squid differ by age and life stage; however, quantifying these relationships is complex and is dependent on accurate age and life cycle estimates. It is likely that multiple natural mortality approximations will need to be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality in longfin squid, but methods are not currently available to directly quantify
 :::
+
+:::{}
+![](`r params$img1`)
+:::
+
 ::::
 
 ::::{}
@@ -66,6 +75,11 @@ devtools::load_all()
 ::::
 
 ::::{}
+:::{}
+\section{Longfin Squid Age Frequency from SQUIBS dataset}
+![](`r params$img3`)
+:::
+
 :::{}
 \section{Key Points from the Mid-Atlantic Risk Assessment}
 
@@ -80,6 +94,8 @@ In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespa
   - Occasional recent changes in regulations; moderate (3-4) recreational regulation differences across states
   - Regular discards and incidental catch but managed; moderate discard mortality
 :::
+
+\vspace{0.5cm}
 
 :::{}
 ![](`r params$img2`)
@@ -109,6 +125,25 @@ data <- readxl::read_excel(params$tbl_file) |>
 ```{r}
 NEesp2::rpt_card_table(data)
 ```
+
+\section{Research Recommendations}
+
+\raggedright
+-Expand ecosystem and socioeconomic indicator selection relevant to longfin squid stock dynamics. Potential ecosystem indicators include bottom salinity, sea surface temperature, warm core rings, marine heatwaves, storminess index, indices of food availability, and other oceanographic indicators relevant to shelf/slope dynamics. Potential socioeconomic indicators include fuel price, quotas, and ex-vessel price.
+
+\vspace{0.25cm}
+
+-Analyze indicators against longfin squid metrics, such as a standardized CPUE index. 
+
+\vspace{0.25cm}
+
+-Estimate availability of longfin squid stock to fishery independent surveys and fishery. Through a seasonal habitat suitability model/species distribution model. 
+
+\vspace{0.25cm}
+
+-Evaluate ecosystem and socioeconomic influences on longfin squid in reference to the stock assessment and fisheries management consideratio
+
+\vspace{2.0cm}
 
 \centering
 Please contact [nefsc.esp.leads@noaa.gov](nefsc.esp.leads@noaa.gov) with any questions or comments.
