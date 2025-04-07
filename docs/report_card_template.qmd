@@ -38,6 +38,8 @@ devtools::load_all()
 
 \section{Spring 2026}
 
+\vspace{0.75cm}
+
 ::::: {layout="[ [0.6, 0.025, 0.375]] "}
 
 :::: {}
