@@ -2,8 +2,8 @@
 title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\protect\\newline Ecosystem & Socioeconomic Profile Report Card"
 format: 
   pdf:
-    margin-left: "0.5in"
-    margin-right: "0.5in"
+    margin-left: "0.25in"
+    margin-right: "0.25in"
     margin-top: "0in"
     margin-bottom: "0.5in"
     fontsize: "9pt"
@@ -34,11 +34,11 @@ devtools::load_all()
  }
 \BgThispage
 
-\vspace{-1.5cm}
+\vspace{-2.0cm}
 
 \section{Spring 2026}
 
-::::: {layout="[ [0.6, 0.025, 0.475]] "}
+::::: {layout="[ [0.6, 0.025, 0.375]] "}
 
 :::: {}
 
@@ -64,6 +64,8 @@ Traditionally, longfin squid were thought to spawn in two distinct cohorts: spri
 Potential relationships between natural morality and longfin inshore squid differ by age and life stage; however, quantifying these relationships is complex and is dependent on accurate age and life cycle estimates. It is likely that multiple natural mortality approximations will need to be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality in longfin squid, but methods are not currently available to directly quantify
 :::
 
+\vspace{1.0cm}
+
 :::{}
 ![](`r params$img1`)
 :::
@@ -79,6 +81,8 @@ Potential relationships between natural morality and longfin inshore squid diffe
 \section{Longfin Squid Age Frequency from SQUIBS dataset}
 ![](`r params$img3`)
 :::
+
+\vspace{1.0cm}
 
 :::{}
 \section{Key Points from the Mid-Atlantic Risk Assessment}
