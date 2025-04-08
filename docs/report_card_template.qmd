@@ -14,7 +14,7 @@ format:
     papersize: letter
 params:
   widths: !expr c(0.9, 0.75, 3, 3)
-  img1: !expr here::here("images/conceptual_model.jpg")
+  img1: !expr here::here("images/conceptual_model.png")
   img2: !expr here::here("images/risk_chart.png")
   img3: !expr here::here("images/squibs_data.png")
   img4: !expr here::here("images/noaa_logo.png")
