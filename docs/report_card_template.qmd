@@ -45,6 +45,7 @@ devtools::load_all()
 :::: {}
 
 :::{}
+\raggedright
 \section{Key Findings from the Life History Working Group}
 
 \subsection{Lifespan and aging}
