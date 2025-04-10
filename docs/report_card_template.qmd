@@ -49,22 +49,22 @@ devtools::load_all()
 \section{Key Findings from the Life History Working Group}
 
 \subsection{Lifespan and aging}
-Hypothesis of 1 statolith ring/day is well-established but includes some uncertainty of aging error if daily statolith increments are incorrect. Discussions from the longfin squid summit estimate a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging of longfin squid in the SQUIBS dataset (right) - assuming 1 statolith ring/day - indicate maximum ages of ~7 months for females and ~8.6 months for males.
+Growth is estimated to be 1 statolith ring/day, per multiple literature sources. Participants at the longfin squid summit estimated a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging  indicates maximum ages of 7 months for females and 8.6 months for males (right).
 
 \vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
-Previous literature suggests the possibility of a “winter cohort” of longfin squid that hatch south of Cape Hatteras and subsequently migrate onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm ML squid from waters south of Hatteras through the Mid-Atlantic and southern New England, with the smallest squid detected further south. Dr. David Richardson proposed a mechanism for this migration hypothesis in which the recruitment transport of juvenile squid from winter hatching grounds on the Southeast U.S. shelf is facilitated by the Gulf Stream and warm core rings.
+Literature suggests the possibility of a winter cohort that hatches south of Cape Hatteras and subsequently migrates onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid (Richardson WP).
 
 \vspace{0.25cm}
 
 \subsection{Reproductive dynamics}
-Traditionally, longfin squid were thought to spawn in two distinct cohorts: spring and summer/fall. Consideration of the hypothesis of a winter cohort spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock. 
+Consideration of the hypothesis of a winter cohort spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock.
 
 \vspace{0.25cm}
 
 \subsection{Natural mortality}
-Potential relationships between natural morality and longfin inshore squid differ by age and life stage; however, quantifying these relationships is complex and is dependent on accurate age and life cycle estimates. It is likely that multiple natural mortality approximations will need to be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality in longfin squid, but methods are not currently available to directly quantify
+Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Multiple natural mortality approximations could be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
 :::
 
 \vspace{1.0cm}
@@ -98,8 +98,9 @@ In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespa
   - High potential for and observed distribution shifts  
 - Moderate-high risk to the commercial fishery due to:
   - Risk of not achieving optimum yield due to interactions with non-Council managed species
-  - Occasional recent changes in regulations; moderate (3-4) recreational regulation differences across states
-  - Regular discards and incidental catch but managed; moderate discard mortality
+  - Occasional recent changes in regulations; low-moderate regulatory complexity
+  - Regular, managed discards and incidental catch; moderate discard mortality
+
 :::
 
 \vspace{0.5cm}
