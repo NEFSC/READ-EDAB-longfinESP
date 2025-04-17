@@ -1,4 +1,3 @@
-
 ### Project name: Longfin ESP Report Card
 ### Code purpose: Create and plot bottom temperature indicator
 
@@ -80,17 +79,15 @@ plt_bt <- function(data) {
                    axis.text.x = ggplot2::element_text(angle = 30,
                                                        hjust = 1),
                    aspect.ratio = 1/4) +
-    ggplot2::facet_grid('season')
+    ggplot2::facet_grid('season', scales = "free_y")
   
   return(plt)
 }
 
-all_indicators <- dplyr::bind_rows(
-  temp_indicator)
-
 plt_bt(temp_indicator)
 
-all_indicators <- dplyr::bind_rows(gsi)
+all_indicators <- dplyr::bind_rows(
+  temp_indicator)
 
 for(i in unique(all_indicators$INDICATOR_NAME)) {
   this_dat <- all_indicators |>
@@ -109,7 +106,8 @@ for(i in unique(all_indicators$INDICATOR_NAME)) {
   fig <- plt_bt(this_dat)
   
   ggplot2::ggsave(fname,
-                  width = 6,
+                  width = 8,
                   height = 4)
   
 }
+
