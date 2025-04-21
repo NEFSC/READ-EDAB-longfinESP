@@ -26,17 +26,6 @@ knitr::opts_chunk$set(echo = FALSE)
 # here::i_am("inst/esp_template/06_docs/report card pg 1.qmd")
 devtools::load_all()
 ``` 
-\backgroundsetup{
-  scale=1,
-  angle=0,
-  opacity=0,
-  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg_pg1.jpg}}
- }
-\BgThispage
-
-
-<!-- \section{Longfin Inshore Squid (Doryteuthis pealeii) Ecosystem & Socioeconomic Profile Report Card} -->
-
 
 ::::: {layout="[ [1], [0.575, 0.025, 0.4]] "}
 
