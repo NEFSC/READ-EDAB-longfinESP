@@ -27,10 +27,19 @@ knitr::opts_chunk$set(echo = FALSE)
 devtools::load_all()
 ``` 
 
+<!-- \backgroundsetup{
+  scale=1,
+  angle=0,
+  opacity=0,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg_pg1.jpg}}
+ }
+\BgThispage -->
+
+
 ::::: {layout="[ [1], [0.575, 0.025, 0.4]] "}
 
 :::{}
-\vspace{1.5cm}
+\vspace{1.75cm}
 
 \section{Longfin Inshore Squid (Doryteuthis pealeii) Ecosystem and Socioeconomic Profile Report Card}
 \section{Spring 2026} 
@@ -110,10 +119,10 @@ In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespa
 
 \newpage
 
-\backgroundsetup{
+<!-- \backgroundsetup{
   contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg_pg2.jpg}}
   }
-\BgThispage
+\BgThispage -->
 <!-- not sure why this doesn't work -->
 
 \newgeometry{top=0.25in, left=0.25in, right=0.25in, bottom=0.25in}
