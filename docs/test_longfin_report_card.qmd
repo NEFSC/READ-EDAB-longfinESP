@@ -39,9 +39,12 @@ devtools::load_all()
 ::::: {layout="[ [1], [0.575, 0.025, 0.4]] "}
 
 :::{}
-\vspace{1.75cm}
+\vspace{2.5cm}
 
-\section{Longfin Inshore Squid (Doryteuthis pealeii) Ecosystem and Socioeconomic Profile Report Card}
+\LARGE\centering Longfin Inshore Squid \textit{(Doryteuthis pealeii)}
+\LARGE\centering Ecosystem and Socioeconomic Profile Report Card
+
+\vspace{-0.5cm}
 \section{Spring 2026} 
 ::: 
 
