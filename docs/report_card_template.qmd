@@ -1,5 +1,5 @@
 ---
-# title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\protect\\newline Ecosystem & Socioeconomic Profile Report Card"
+title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\protect\\newline Ecosystem & Socioeconomic Profile Report Card"
 format: 
   pdf:
     margin-left: "0.25in"
@@ -38,14 +38,7 @@ devtools::load_all()
 <!-- \section{Longfin Inshore Squid (Doryteuthis pealeii) Ecosystem & Socioeconomic Profile Report Card} -->
 
 
-::::: {layout="[ [1], [0.575, 0.025, 0.4]] "}
-
-:::{}
-\vspace{1.0cm}
-
-\section{Longfin Inshore Squid (Doryteuthis pealeii) Ecosystem and Socioeconomic Profile Report Card}
-\section{Spring 2026} 
-::: 
+::::: {layout="[ [0.575, 0.025, 0.4]] "}
 
 :::: {}
 

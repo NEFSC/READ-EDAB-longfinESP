@@ -41,7 +41,7 @@ devtools::load_all()
 ::::: {layout="[ [1], [0.575, 0.025, 0.4]] "}
 
 :::{}
-\vspace{1.0cm}
+\vspace{1.5cm}
 
 \section{Longfin Inshore Squid (Doryteuthis pealeii) Ecosystem and Socioeconomic Profile Report Card}
 \section{Spring 2026} 
@@ -50,7 +50,7 @@ devtools::load_all()
 :::: {}
 
 :::{}
-\vspace{1.0cm}
+\vspace{0.5cm}
 \raggedright
 \section{Key Findings from the Life History Working Group}
 
@@ -73,7 +73,7 @@ Consideration of the hypothesis of a winter cohort spawning south of Hatteras in
 Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Multiple natural mortality approximations could be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
 :::
 
-\vspace{1.0cm}
+\vspace{0.5cm}
 
 :::{}
 ![](`r params$img1`)
@@ -87,12 +87,12 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 
 ::::{}
 :::{}
-\vspace{1.0cm}
+\vspace{0.5cm}
 \section{Longfin Squid Age Frequency from SQUIBS dataset}
 ![](`r params$img3`)
 :::
 
-\vspace{0.5cm}
+\vspace{0.25cm}
 
 :::{}
 \section{Key Points from the Mid-Atlantic Risk Assessment}
@@ -110,7 +110,7 @@ In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespa
 
 :::
 
-\vspace{0.5cm}
+\vspace{0.25cm}
 
 :::{}
 ![](`r params$img2`)
