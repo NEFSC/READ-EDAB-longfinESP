@@ -41,7 +41,7 @@ devtools::load_all()
 :::{}
 \vspace{2.5cm}
 
-\LARGE\centering Longfin Inshore Squid \textit{(Doryteuthis pealeii)}
+\LARGE\centering Longfin Inshore Squid \textit{(Doryteuthis pealeii)} 
 \LARGE\centering Ecosystem and Socioeconomic Profile Report Card
 
 \vspace{-0.5cm}
@@ -139,7 +139,9 @@ data <- readxl::read_excel(params$tbl_file) |>
 
 ::: {}
 ```{r}
-NEesp2::rpt_card_table(data)
+NEesp2::rpt_card_table(data) |> 
+  flextable::font(i = 1:5, j = 1:3, fontname='Times New Roman') |>
+  flextable::height(i = 5, height = 3, unit = "in")
 ```
 
 \section{Research Recommendations}
