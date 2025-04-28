@@ -140,8 +140,7 @@ data <- readxl::read_excel(params$tbl_file) |>
 ::: {}
 ```{r}
 NEesp2::rpt_card_table(data) |> 
-  flextable::font(i = 1:5, j = 1:3, fontname='Times New Roman') |>
-  flextable::height(i = 5, height = 3, unit = "in")
+  flextable::font(i = 1:5, j = 1:3, fontname='Times New Roman')
 ```
 
 \section{Research Recommendations}
