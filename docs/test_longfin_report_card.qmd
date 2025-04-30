@@ -1,10 +1,10 @@
 ---
-# title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\protect\\newline Ecosystem & Socioeconomic Profile Report Card"
+title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\linebreak Ecosystem & Socioeconomic Profile Report Card"
 format: 
   pdf:
     margin-left: "0.25in"
     margin-right: "0.25in"
-    margin-top: "0in"
+    margin-top: "0.5in"
     margin-bottom: "0.25in"
     fontsize: "9pt"
     linestretch: 1
@@ -35,28 +35,22 @@ devtools::load_all()
  }
 \BgThispage -->
 
+```{=tex}
+\vspace{-2.0cm}
+\section{Spring 2026}
+```
 
-::::: {layout="[ [1], [0.575, 0.025, 0.4]] "}
-
-:::{}
-\vspace{2.5cm}
-
-\LARGE\centering Longfin Inshore Squid \textit{(Doryteuthis pealeii)} 
-\LARGE\centering Ecosystem and Socioeconomic Profile Report Card
-
-\vspace{-0.5cm}
-\section{Spring 2026} 
-::: 
+::::: {layout="[[0.575, 0.025, 0.4]] "}
 
 :::: {}
 
 :::{}
-\vspace{0.5cm}
+\vspace{0.25cm}
 \raggedright
 \section{Key Findings from the Life History Working Group}
 
 \subsection{Lifespan and aging}
-Growth is estimated to be 1 statolith ring/day, per multiple literature sources. Participants at the longfin squid summit estimated a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging  indicates maximum ages of 7 months for females and 8.6 months for males (right).
+Growth is estimated to be 1 statolith ring/day, per multiple literature sources. Participants at the longfin squid summit estimated a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging  indicates a maximum observed age of 7 months for females and 8.6 months for males (right).
 
 \vspace{0.25cm}
 
@@ -74,7 +68,7 @@ Consideration of the hypothesis of a winter cohort spawning south of Hatteras in
 Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Multiple natural mortality approximations could be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
 :::
 
-\vspace{0.5cm}
+\vspace{0.25cm}
 
 :::{}
 ![](`r params$img1`)
@@ -88,7 +82,7 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 
 ::::{}
 :::{}
-\vspace{0.5cm}
+\vspace{0.25cm}
 \section{Longfin Squid Age Frequency from SQUIBS dataset}
 ![](`r params$img3`)
 :::
