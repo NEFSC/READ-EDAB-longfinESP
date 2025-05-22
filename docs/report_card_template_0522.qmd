@@ -1,0 +1,172 @@
+---
+title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\protect\\newline Ecosystem & Socioeconomic Profile Report Card"
+format: 
+  pdf:
+    margin-left: "0.25in"
+    margin-right: "0.25in"
+    margin-top: "0in"
+    margin-bottom: "0.5in"
+    fontsize: "8.5pt"
+    linestretch: 1
+    indent: true
+    include-in-header: template.tex    
+    documentclass: "article"
+    keep-tex: true
+    papersize: letter
+params:
+  widths: !expr c(0.9, 0.75, 3, 3)
+  img1: !expr here::here("images/0521_conceptual model.png")
+  img2: !expr here::here("images/risk_chart.png")
+  img3: !expr here::here("images/squibs_data.png")
+  img4: !expr here::here("images/noaa_logo.png")
+  tbl_file: !expr here::here("docs/table_template.xlsx")
+  img_dir: !expr here::here("images")
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+# here::i_am("inst/esp_template/06_docs/report card pg 1.qmd")
+#devtools::load_all()
+devtools::load_all(here::here("../READ-EDAB-NEesp2"))
+``` 
+\backgroundsetup{
+  scale=1,
+  angle=0,
+  opacity=0,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg_pg1.jpg}}
+ }
+\BgThispage
+
+<!-- \fontsize{9}{10}\selectfont\blindtext -->
+
+\vspace{-2.0cm}
+
+\section{Spring 2026}
+
+\vspace{0.75cm}
+
+::::: {layout="[ [0.575, 0.025, 0.4]] "}
+
+:::: {}
+
+:::{}
+\raggedright
+\section{Key Findings from the Life History Working Group}
+
+\subsection{Lifespan and aging}
+Growth is estimated to be 1 statolith ring/day, per multiple literature sources. Participants at the longfin squid summit estimated a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging  indicates maximum ages of 7 months for females and 8.6 months for males (right) from squid caught in the fishery.
+
+\vspace{0.25cm}
+
+\subsection{Maturity (from SQUIBS)}
+In 2024, most stage 4 squid caught in summer with very little mature squid caught the rest of the year. Highest numbers of immature (stage 1) squid were caught in the second half of 2024. In 2025 (Jan-Apr), squid caught represent largely intermediate maturity stages (2+3) with few stage 1 and stage 4. Of 912 squid assessed, the dominant maturity stage in females increases from Fall (1) -> Winter (2) -> Spring (3). The highest percentage of mature male squid were caught in spring and summer. No stage 4 females and very few stage 1 males were caught.
+
+\vspace{0.25cm}
+
+\subsection{Migration and movement dynamics}
+Literature review and recent work by Dave Richardson suggests the possibility of a winter cohort that hatches south of Cape Hatteras and subsequently migrates onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid (Richardson WP).
+
+\vspace{0.25cm}
+
+\subsection{Reproductive dynamics}
+Consideration of the hypothesis of a winter cohort spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock.
+
+\vspace{0.25cm}
+
+\subsection{Natural mortality}
+Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Multiple natural mortality approximations could be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
+:::
+
+\vspace{1.0cm}
+
+:::{}
+![](`r params$img1`)
+:::
+
+::::
+
+::::{}
+\hfill
+::::
+
+::::{}
+:::{}
+\section{Longfin Squid Age Frequency from SQUIBS dataset}
+![](`r params$img3`)
+:::
+
+\vspace{1.0cm}
+
+:::{}
+\section{Key Points from the Mid-Atlantic Risk Assessment}
+
+\raggedright
+<!-- maybe this is being centered because it's the only section without a header? -->
+In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf), longfin squid scored moderate-high risk in the following elements:
+
+- Moderate-high risk to the stock due to:
+  - High potential for and observed distribution shifts  
+- Moderate-high risk to the commercial fishery due to:
+  - Risk of not achieving optimum yield due to interactions with non-Council managed species
+  - Occasional recent changes in regulations; low-moderate regulatory complexity
+  - Regular, managed discards and incidental catch; moderate discard mortality
+- Moderate-high risk to commercial fishery value 
+  - As it pertains to maximizing commercial fishery value based on net revenue and revenue, cost, and  profitability indice findings 
+- Moderate-high risk to Commercial Fishery Resilience – Fleet Diversity 
+  - Driven by 21 year down-ward trend of the Mid-Atlantic Fleet Count indicator 
+
+
+:::
+
+\vspace{0.5cm}
+
+:::{}
+![](`r params$img2`)
+:::
+::::
+
+:::::
+
+\newpage
+
+\backgroundsetup{
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg_pg2.jpg}}
+  }
+\BgThispage
+<!-- not sure why this doesn't work -->
+
+\newgeometry{top=0.25in, left=0.25in, right=0.25in, bottom=0.25in}
+
+```{r}
+data <- readxl::read_excel(params$tbl_file) |>
+  janitor::clean_names() |>
+  dplyr::mutate(figure =  paste0(params$img_dir, "/", time_series)) |>
+  dplyr::select(-time_series)
+```
+
+::: {}
+```{r}
+NEesp2::rpt_card_table(data)
+```
+
+\section{Research Recommendations}
+
+\raggedright
+-Expand ecosystem and socioeconomic indicator selection relevant to longfin squid stock dynamics. Potential ecosystem indicators include bottom salinity, sea surface temperature, warm core rings, marine heatwaves, storminess index, indices of food availability, and other oceanographic indicators relevant to shelf/slope dynamics. Potential socioeconomic indicators include fuel price, quotas, and ex-vessel price.
+
+\vspace{0.25cm}
+
+-Analyze indicators against longfin squid metrics, such as a standardized CPUE index. 
+
+\vspace{0.25cm}
+
+-Estimate availability of longfin squid stock to fishery independent surveys and fishery. Through a seasonal habitat suitability model/species distribution model. 
+
+\vspace{0.25cm}
+
+-Evaluate ecosystem and socioeconomic influences on longfin squid in reference to the stock assessment and fisheries management considerations.
+
+\vspace{2.0cm}
+
+\centering
+Please contact [nefsc.esp.leads@noaa.gov](nefsc.esp.leads@noaa.gov) with any questions or comments.
+:::
