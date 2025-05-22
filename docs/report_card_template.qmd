@@ -5,27 +5,23 @@ format:
     margin-left: "0.25in"
     margin-right: "0.25in"
     margin-top: "0in"
-<<<<<<<< HEAD:docs/report_card_template_0522.qmd
-    margin-bottom: "0.5in"
-    fontsize: "8.5pt"
-========
     margin-bottom: "0.25in"
     fontsize: "9pt"
->>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683:docs/report_card_template.qmd
     linestretch: 1
     indent: true
     include-in-header: template.tex    
-    documentclass: "article"
+    # documentclass: "article"
     keep-tex: true
     papersize: letter
 params:
   widths: !expr c(0.9, 0.75, 3, 3)
-  img1: !expr here::here("images/0521_conceptual model.png")
+  img1: !expr here::here("images/0521_conceptual_model.png")
   img2: !expr here::here("images/risk_chart.png")
   img3: !expr here::here("images/squibs_data.png")
   img4: !expr here::here("images/noaa_logo.png")
   tbl_file: !expr here::here("docs/table_template.xlsx")
   img_dir: !expr here::here("images")
+latex_engine: xelatex
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -42,14 +38,8 @@ devtools::load_all(here::here("../READ-EDAB-NEesp2"))
  }
 \BgThispage 
 
-<<<<<<<< HEAD:docs/report_card_template_0522.qmd
-<!-- \fontsize{9}{10}\selectfont\blindtext -->
-
-\vspace{-2.0cm}
-========
-\vspace{-0.5cm}
+\vspace{-2cm}
 \section{Spring 2026} 
->>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683:docs/report_card_template.qmd
 
 ::::: {layout="[[0.575, 0.025, 0.4]] "}
 
@@ -154,8 +144,8 @@ data <- readxl::read_excel(params$tbl_file) |>
 
 ::: {}
 ```{r}
-NEesp2::rpt_card_table(data) |> 
-  flextable::font(i = 1:5, j = 1:3, fontname='Times New Roman')
+NEesp2::rpt_card_table(data, widths = params$widths) #|> 
+  # flextable::font(i = 1:5, j = 1:3, fontname='Times New Roman')
 ```
 
 \section{Research Recommendations}
