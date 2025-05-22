@@ -6,15 +6,16 @@ format:
     margin-right: "0.25in"
     margin-top: "0in"
     margin-bottom: "0.5in"
-    fontsize: "9pt"
+    fontsize: "8.5pt"
     linestretch: 1
     indent: true
     include-in-header: template.tex    
-    # keep-tex: true
+    documentclass: "article"
+    keep-tex: true
     papersize: letter
 params:
   widths: !expr c(0.9, 0.75, 3, 3)
-  img1: !expr here::here("images/conceptual_model.png")
+  img1: !expr here::here("images/0521_conceptual model.png")
   img2: !expr here::here("images/risk_chart.png")
   img3: !expr here::here("images/squibs_data.png")
   img4: !expr here::here("images/noaa_logo.png")
@@ -34,6 +35,8 @@ devtools::load_all()
  }
 \BgThispage
 
+<!-- \fontsize{9}{10}\selectfont\blindtext -->
+
 \vspace{-2.0cm}
 
 \section{Spring 2026}
@@ -49,12 +52,17 @@ devtools::load_all()
 \section{Key Findings from the Life History Working Group}
 
 \subsection{Lifespan and aging}
-Growth is estimated to be 1 statolith ring/day, per multiple literature sources. Participants at the longfin squid summit estimated a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging  indicates maximum ages of 7 months for females and 8.6 months for males (right).
+Growth is estimated to be 1 statolith ring/day, per multiple literature sources. Participants at the longfin squid summit estimated a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging  indicates maximum ages of 7 months for females and 8.6 months for males (right) from squid caught in the fishery.
+
+\vspace{0.25cm}
+
+\subsection{Maturity (from SQUIBS)}
+In 2024, most stage 4 squid caught in summer with very little mature squid caught the rest of the year. Highest numbers of immature (stage 1) squid were caught in the second half of 2024. In 2025 (Jan-Apr), squid caught represent largely intermediate maturity stages (2+3) with few stage 1 and stage 4. Of 912 squid assessed, the dominant maturity stage in females increases from Fall (1) -> Winter (2) -> Spring (3). The highest percentage of mature male squid were caught in spring and summer. No stage 4 females and very few stage 1 males were caught.
 
 \vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
-Literature suggests the possibility of a winter cohort that hatches south of Cape Hatteras and subsequently migrates onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid (Richardson WP).
+Literature review and recent work by Dave Richardson suggests the possibility of a winter cohort that hatches south of Cape Hatteras and subsequently migrates onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid (Richardson WP).
 
 \vspace{0.25cm}
 
@@ -100,6 +108,11 @@ In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespa
   - Risk of not achieving optimum yield due to interactions with non-Council managed species
   - Occasional recent changes in regulations; low-moderate regulatory complexity
   - Regular, managed discards and incidental catch; moderate discard mortality
+- Moderate-high risk to commercial fishery value 
+  - As it pertains to maximizing commercial fishery value based on net revenue and revenue, cost, and  profitability indice findings 
+- Moderate-high risk to Commercial Fishery Resilience – Fleet Diversity 
+  - Driven by 21 year down-ward trend of the Mid-Atlantic Fleet Count indicator 
+
 
 :::
 
@@ -131,7 +144,7 @@ data <- readxl::read_excel(params$tbl_file) |>
 
 ::: {}
 ```{r}
-NEesp2::rpt_card_table(data)
+rpt_card_table(data)
 ```
 
 \section{Research Recommendations}
