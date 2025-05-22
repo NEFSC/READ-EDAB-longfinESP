@@ -25,7 +25,8 @@ params:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 # here::i_am("inst/esp_template/06_docs/report card pg 1.qmd")
-devtools::load_all()
+#devtools::load_all()
+devtools::load_all(here::here("../READ-EDAB-NEesp2"))
 ``` 
 \backgroundsetup{
   scale=1,
@@ -144,7 +145,7 @@ data <- readxl::read_excel(params$tbl_file) |>
 
 ::: {}
 ```{r}
-rpt_card_table(data)
+NEesp2::rpt_card_table(data)
 ```
 
 \section{Research Recommendations}
@@ -162,7 +163,7 @@ rpt_card_table(data)
 
 \vspace{0.25cm}
 
--Evaluate ecosystem and socioeconomic influences on longfin squid in reference to the stock assessment and fisheries management consideratio
+-Evaluate ecosystem and socioeconomic influences on longfin squid in reference to the stock assessment and fisheries management considerations.
 
 \vspace{2.0cm}
 
