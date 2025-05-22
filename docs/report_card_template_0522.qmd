@@ -10,7 +10,7 @@ format:
     linestretch: 1
     indent: true
     include-in-header: template.tex    
-    documentclass: "article"
+    # documentclass: "article"
     keep-tex: true
     papersize: letter
 params:
@@ -21,6 +21,7 @@ params:
   img4: !expr here::here("images/noaa_logo.png")
   tbl_file: !expr here::here("docs/table_template.xlsx")
   img_dir: !expr here::here("images")
+latex_engine: xelatex
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -145,7 +146,7 @@ data <- readxl::read_excel(params$tbl_file) |>
 
 ::: {}
 ```{r}
-NEesp2::rpt_card_table(data)
+NEesp2::rpt_card_table(data, widths = params$widths)
 ```
 
 \section{Research Recommendations}

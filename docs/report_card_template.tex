@@ -4,12 +4,21 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
+<<<<<<< HEAD
+  8.5pt,
+  letterpaper,
+]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+=======
   9pt,
   letterpaper,
   DIV=11,
   numbers=noendperiod]{scrartcl}
 
 \usepackage{amsmath,amssymb}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 \usepackage{setspace}
 \usepackage{iftex}
 \ifPDFTeX
@@ -21,10 +30,13 @@
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
+<<<<<<< HEAD
+=======
 \usepackage{lmodern}
 \ifPDFTeX\else  
     % xetex/luatex font selection
 \fi
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \IfFileExists{microtype.sty}{% use microtype if available
@@ -32,7 +44,11 @@
   \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 \usepackage{xcolor}
+<<<<<<< HEAD
+\usepackage[lmargin=0.25in,rmargin=0.25in,tmargin=0in,bmargin=0.5in]{geometry}
+=======
 \usepackage[lmargin=0.25in,rmargin=0.25in,tmargin=0in,bmargin=0.25in]{geometry}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 % Make \paragraph and \subparagraph free-standing
@@ -71,8 +87,14 @@
 \def\fps@figure{htbp}
 \makeatother
 
+<<<<<<< HEAD
+\usepackage[pages=some]{background}
+% \usepackage{blindtext}
+% \usepackage[fontsize=9.5pt]{fontsize}
+=======
 
 \usepackage[fontsize=9.5pt]{fontsize}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \RedeclareSectionCommand[font=\centering\large]{section}
 \RedeclareSectionCommand[
@@ -101,7 +123,10 @@
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{wrapfig}
+<<<<<<< HEAD
+=======
 \KOMAoption{captions}{tableheading}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 \makeatletter
 \makeatother
 \makeatletter
@@ -146,15 +171,22 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 \makeatletter
+<<<<<<< HEAD
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+=======
 \@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 \makeatother
 \makeatletter
 \@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
 \makeatother
 \makeatletter
 \makeatother
+<<<<<<< HEAD
+=======
 \makeatletter
 \makeatother
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -171,13 +203,21 @@
   pdfcreator={LaTeX via pandoc}}
 
 \title{Longfin Inshore Squid (\protect\textit{Doryteuthis pealeii})
+<<<<<<< HEAD
+\protect\newline Ecosystem \& Socioeconomic Profile Report Card}
+=======
 \linebreak Ecosystem \& Socioeconomic Profile Report Card}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 \author{}
 \date{}
 
 \begin{document}
 \maketitle
+<<<<<<< HEAD
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, breakable, sharp corners, boxrule=0pt, frame hidden]}{\end{tcolorbox}}\fi
+=======
 \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, boxrule=0pt, sharp corners, breakable, frame hidden]}{\end{tcolorbox}}\fi
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \setstretch{1}
 \backgroundsetup{
@@ -188,16 +228,28 @@
  }
 \BgThispage
 
+<<<<<<< HEAD
+\vspace{-2.0cm}
+
+\section{Spring 2026}
+
+\vspace{0.75cm}
+
+=======
 \vspace{-0.5cm}
 \section{Spring 2026}
 
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 \begin{figure}
 
 \begin{minipage}[t]{0.57\linewidth}
 
 {\centering 
 
+<<<<<<< HEAD
+=======
 \vspace{0.5cm}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 \raggedright
 \section{Key Findings from the Life History Working Group}
 
@@ -207,12 +259,41 @@ Growth is estimated to be 1 statolith ring/day, per multiple literature
 sources. Participants at the longfin squid summit estimated a maximum
 age of 15 months. Literature review supports a lifespan of less than 1
 year. Recent (2024) statolith aging indicates maximum ages of 7 months
+<<<<<<< HEAD
+for females and 8.6 months for males (right) from squid caught in the
+fishery.
+
+\vspace{0.25cm}
+
+\subsection{Maturity (from SQUIBS)}
+
+In 2024, most stage 4 squid caught in summer with very little mature
+squid caught the rest of the year. Highest numbers of immature (stage 1)
+squid were caught in the second half of 2024. In 2025 (Jan-Apr), squid
+caught represent largely intermediate maturity stages (2+3) with few
+stage 1 and stage 4. Of 912 squid assessed, the dominant maturity stage
+in females increases from Fall (1) -\textgreater{} Winter (2)
+-\textgreater{} Spring (3). The highest percentage of mature male squid
+were caught in spring and summer. No stage 4 females and very few stage
+1 males were caught.
+=======
 for females and 8.6 months for males (right).
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
 
+<<<<<<< HEAD
+Literature review and recent work by Dave Richardson suggests the
+possibility of a winter cohort that hatches south of Cape Hatteras and
+subsequently migrates onto the Northeast U.S. continental shelf. Fishery
+observations describe a spatial gradient of 1-6 cm mantle length (ML)
+squid from waters south of Hatteras through southern New England, with
+the smallest squid detected further south. The Gulf Stream and warm core
+rings may facilitate the recruitment transport of juvenile squid
+(Richardson WP).
+=======
 Literature suggests the possibility of a winter cohort that hatches
 south of Cape Hatteras and subsequently migrates onto the Northeast U.S.
 continental shelf. Fishery observations describe a spatial gradient of
@@ -220,6 +301,7 @@ continental shelf. Fishery observations describe a spatial gradient of
 southern New England, with the smallest squid detected further south.
 The Gulf Stream and warm core rings may facilitate the recruitment
 transport of juvenile squid (Richardson WP).
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \vspace{0.25cm}
 
@@ -240,9 +322,15 @@ mortality approximations could be developed to match lifespan
 hypotheses. Intraspecific predation impacts natural mortality, but there
 is no available data to quantify the amount of mortality this causes.
 
+<<<<<<< HEAD
+\vspace{1.0cm}
+
+\includegraphics{/home/atyrell/SOE_ESP_Data/longfinESP/images/0521_conceptual model.png}
+=======
 \vspace{0.5cm}
 
 \includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/conceptual_model.png}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 }
 
@@ -262,12 +350,20 @@ is no available data to quantify the amount of mortality this causes.
 
 {\centering 
 
+<<<<<<< HEAD
+\section{Longfin Squid Age Frequency from SQUIBS dataset}
+
+\includegraphics{/home/atyrell/SOE_ESP_Data/longfinESP/images/squibs_data.png}
+
+\vspace{1.0cm}
+=======
 \vspace{0.5cm}
 \section{Longfin Squid Age Frequency from SQUIBS dataset}
 
 \includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/squibs_data.png}
 
 \vspace{0.25cm}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \section{Key Points from the Mid-Atlantic Risk Assessment}
 
@@ -303,11 +399,38 @@ moderate-high risk in the following elements:
     Regular, managed discards and incidental catch; moderate discard
     mortality
   \end{itemize}
+<<<<<<< HEAD
+\item
+  Moderate-high risk to commercial fishery value
+
+  \begin{itemize}
+  \tightlist
+  \item
+    As it pertains to maximizing commercial fishery value based on net
+    revenue and revenue, cost, and profitability indice findings
+  \end{itemize}
+\item
+  Moderate-high risk to Commercial Fishery Resilience
+  \textless80\textgreater\textless93\textgreater{} Fleet Diversity
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Driven by 21 year down-ward trend of the Mid-Atlantic Fleet Count
+    indicator
+  \end{itemize}
+\end{itemize}
+
+\vspace{0.5cm}
+
+\includegraphics{/home/atyrell/SOE_ESP_Data/longfinESP/images/risk_chart.png}
+=======
 \end{itemize}
 
 \vspace{0.25cm}
 
 \includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/risk_chart.png}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 }
 
@@ -336,56 +459,93 @@ moderate-high risk in the following elements:
 
 \providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
 
+<<<<<<< HEAD
+\begin{longtable}[c]{|p{0.90in}|p{0.75in}|p{3.00in}|p{3.00in}}
+=======
 \begin{longtable*}[c]{|p{0.90in}|p{0.75in}|p{3.00in}|p{3.00in}}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 
 
 \ascline{0.75pt}{666666}{1-4}
 
+<<<<<<< HEAD
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\textbf{Indicator\ Units}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\textbf{Status\ In\ 2024}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\textbf{Implications}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\textbf{Time\ Series}}}}} \\
+=======
 \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\textbf{Indicator\ Units}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\textbf{Status\ In\ 2024}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\textbf{Implications}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\textbf{Time\ Series}}}}} \\
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \ascline{0.75pt}{666666}{1-4}\endfirsthead 
 
 \ascline{0.75pt}{666666}{1-4}
 
+<<<<<<< HEAD
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\textbf{Indicator\ Units}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\textbf{Status\ In\ 2024}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\textbf{Implications}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\textbf{Time\ Series}}}}} \\
+=======
 \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\textbf{Indicator\ Units}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\textbf{Status\ In\ 2024}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\textbf{Implications}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\textbf{Time\ Series}}}}} \\
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \ascline{0.75pt}{666666}{1-4}\endhead
 
 
 
+<<<<<<< HEAD
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Commercial\ landings\ (millions\ of\ lbs.)
+}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{\linebreak }}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Near\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{An\ increase\ in\ landings\ since\ 2020\ but\ decrease\ in\ number\ of\ vessels\ could\ indicate\ targeted\ trips\ in\ specific\ times\ of\ year\ and\ fishers\ targeting\ other\ species\ when\ longfin\ are\ not\ available.\ High\ variability\ in\ landings\ is\ common\ for\ squid\ fisheries,\ and\ 2024\ commercial\ landings\ fall\ within\ the\ long\ term\ mean.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-1.png}} \\
+=======
 \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Commercial\ landings\ (millions\ of\ lbs.)
 }}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{\linebreak }}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Above\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Add\ implications\ here\ (3-5\ sentences)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-1.png}} \\
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
+<<<<<<< HEAD
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Number\ of\ commercial\ vessels\ (\#)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Below\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Number\ of\ commercial\ vessels\ has\ been\ steadily\ decreasing\ since\ around\ 2000\ consistent\ with\ decreasing\ fleet\ diversity\ and\ continued\ risk\ to\ fishery\ resilience\ (MAFMC\ FID).}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-2.png}} \\
+=======
 \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Number\ of\ commercial\ vessels\ (\#)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Below\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Add\ implications\ here\ (3-5\ sentences)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-2.png}} \\
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
+<<<<<<< HEAD
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Commercial\ revenue\ (2024\ USD)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Below\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Average\ Longfin\ ex-vessel\ prices\ in\ 2024\ increased\ slightly\ from\ 2023\ (+10\%),\ but\ commercial\ revenue\ has\ decreased\ from\ 2023\ which\ is\ most\ likely\ driven\ by\ a\ an\ overall\ decrease\ in\ landings\ by\ 23\%\ (MAFMC\ FID).}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-3.png}} \\
+=======
 \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Commercial\ revenue\ (2023\ USD)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Near\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Add\ implications\ here\ (3-5\ sentences)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-3.png}} \\
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
+<<<<<<< HEAD
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Western\ Gulf\ Stream\ Index\ (shift\ in\ the\ western\ part\ of\ the\ Gulf\ Stream\ North\ wall:\ mean\ position:\ >0\ =\ more\ northerly,\ <0\ =\ more\ southerly)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Above\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Since\ the\ mid-1990s,\ north\ and\ westward\ shifts\ in\ the\ Gulf\ Stream\ have\ resulted\ in\ an\ increase\ in\ warm\ core\ rings\ and\ deep\ water,\ high\ salinity\ heat\ waves.\ The\ position\ of\ the\ Gulf\ Stream\ influences\ seasonal\ temperature\ and\ water\ mass\ mixing\ dynamics\ that\ affect\ longfin\ squid\ habitat\ suitability,\ temperature-dependent\ growth,\ and\ prey\ availability.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-4.png}} \\
+=======
 \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Western\ Gulf\ Stream\ Index\ (shift\ in\ the\ western\ part\ of\ the\ Gulf\ Stream\ North\ wall:\ mean\ position:\ >0\ =\ more\ northerly,\ <0\ =\ more\ southerly)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Above\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Since\ the\ mid-1990s,\ north\ and\ westward\ shifts\ in\ the\ Gulf\ Stream\ have\ resulted\ in\ an\ increase\ in\ warm\ core\ rings\ and\ deep\ water,\ high\ salinity\ heat\ waves.\ The\ position\ of\ the\ Gulf\ Stream\ influences\ seasonal\ temperature\ and\ water\ mass\ mixing\ dynamics\ that\ affect\ longfin\ squid\ habitat\ suitability,\ temperature-dependent\ growth,\ and\ prey\ availability.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-4.png}} \\
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
+<<<<<<< HEAD
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Bottom\ temperature\ in\ MAB\ and\ SNE(°C)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Above\ long\ term\ average\ (Fall);\ near\ long\ term\ average\ (Spring)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{DejaVu Sans}{Longfin\ squid\ seasonal\ distribution\ and\ growth\ rates\ are\ likely\ temperature\ dependent,\ avoiding\ water\ <8°C.\ Inshore\ temperature\ thresholds\ (around\ 14°C)\ initiate\ migration\ of\ squid\ from\ offshore\ overwintering\ habitats.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1.5in]{report_card_template_files/figure-pdf/unnamed-chunk-2-5.png}} \\
+=======
 \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Bottom\ temperature\ in\ MAB\ and\ SNE(°C)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Above\ long\ term\ average\ (Fall);\ near\ long\ term\ average\ (Spring)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Longfin\ squid\ seasonal\ distribution\ and\ growth\ rates\ are\ likely\ temperature\ dependent,\ avoiding\ water\ <8°C.\ Inshore\ temperature\ thresholds\ (around\ 14°C)\ initiate\ migration\ of\ squid\ from\ offshore\ overwintering\ habitats.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1.5in]{report_card_template_files/figure-pdf/unnamed-chunk-2-5.png}} \\
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
+<<<<<<< HEAD
+\end{longtable}
+=======
 \end{longtable*}
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 
 
@@ -423,7 +583,12 @@ model/species distribution model.
 \vspace{0.25cm}
 
 -Evaluate ecosystem and socioeconomic influences on longfin squid in
+<<<<<<< HEAD
+reference to the stock assessment and fisheries management
+considerations.
+=======
 reference to the stock assessment and fisheries management consideratio
+>>>>>>> 0324c0dd673a4473a6c11ce2d1afb0ef56d69683
 
 \vspace{2.0cm}
 
