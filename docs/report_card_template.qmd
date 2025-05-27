@@ -87,11 +87,8 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 
 ::::{}
 :::{}
-\section{Longfin Squid Age Frequency from SQUIBS dataset}
 ![](`r params$img3`)
 :::
-
-\vspace{0.25cm}
 
 :::{}
 \section{Key Points from the Mid-Atlantic Risk Assessment}
