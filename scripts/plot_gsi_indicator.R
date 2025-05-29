@@ -11,6 +11,8 @@
 `%>%` <- magrittr::`%>%`
 
 # Data ----
+#pak::pak("noaa-edab/ecodata")
+#data <- load(here::here('inputs/gsi.rda')) 
 data <- ecodata::gsi
 
 # Analyses ----
@@ -24,13 +26,17 @@ create_gsi <- function(data){
 }
 
 ##modify data
+
+#gsi <- subset(gsi, select = -c(X))
+
 gsi <- create_gsi(data) %>%
   dplyr::filter(Var == 'western gulf stream index') %>%
   dplyr::rename(INDICATOR_NAME = Var,
                 YEAR = Year,
                 DATA_VALUE = Value) %>%
   dplyr::group_by(YEAR) %>%
-  dplyr::mutate(avg = mean(DATA_VALUE))
+  dplyr::mutate(avg = mean(DATA_VALUE)) 
+
 
 ##run plot function
 plt_indicator_gsi <- function(data) {
