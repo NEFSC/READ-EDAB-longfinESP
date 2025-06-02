@@ -1,12 +1,12 @@
 ---
-title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\linebreak Ecosystem & Socioeconomic Profile Report Card"
+title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\linebreak Short-form Ecosystem & Socioeconomic Profile (ESP)"
 format: 
   pdf:
     margin-left: "0.25in"
     margin-right: "0.25in"
     margin-top: "0in"
     margin-bottom: "0.25in"
-    fontsize: "8.5pt"
+    fontsize: "9pt"
     linestretch: 1
     indent: true
     include-in-header: template.tex    
@@ -46,6 +46,7 @@ devtools::load_all(here::here("../READ-EDAB-NEesp2"))
 :::: {}
 
 :::{}
+\vspace{0.50cm}
 \raggedright
 \section{Key Findings from the Life History Working Group}
 
@@ -70,12 +71,13 @@ Consideration of the hypothesis of a winter cohort spawning south of Hatteras in
 \vspace{0.25cm}
 
 \subsection{Natural mortality}
-Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Multiple natural mortality approximations could be developed to match lifespan hypotheses. Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
+Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Using the equation derived by Hamel and Cope (2022), natural mortality for longfin squid can range from 0.36 (max. age = 15 mo.) to 0.675 (max. age = 8 mo.). Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
 :::
 
 \vspace{0.25cm}
 
 :::{}
+\vspace{0.50cm}
 ![](`r params$img1`)
 :::
 
@@ -87,6 +89,8 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 
 ::::{}
 :::{}
+\vspace{0.50cm}
+\section{Age Frequency from SQUIBS}
 ![](`r params$img3`)
 :::
 
@@ -96,6 +100,7 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 \raggedright
 <!-- maybe this is being centered because it's the only section without a header? -->
 The [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf) determined that there are:
+
 - High potential and observed distribution shifts of longfin squid
 - Moderate-high risk of not achieving optimum yield due to interactions with non-Council managed species
 - Moderate-high risk of regulatory complexity negatively impacting optimum yield due to occasional recent changes in regulations and moderate (3-4) recreational regulation differences across states
@@ -108,6 +113,8 @@ Longfin squid did not score in the “high” risk category for any risk element
 :::
 
 :::{}
+\vspace{0.25cm}
+
 ![](`r params$img2`)
 :::
 ::::
@@ -133,8 +140,8 @@ data <- readxl::read_excel(params$tbl_file) |>
 
 ::: {}
 ```{r}
-NEesp2::rpt_card_table(data, widths = params$widths) #|> 
-  # flextable::font(i = 1:5, j = 1:3, fontname='Times New Roman')
+NEesp2::rpt_card_table(data, widths = params$widths) %>% 
+  flextable::font(i = 1:5, j = 1:3, fontname='Times New Roman')
 ```
 
 \section{Research Recommendations}

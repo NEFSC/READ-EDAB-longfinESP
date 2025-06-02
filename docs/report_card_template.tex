@@ -4,7 +4,7 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
-  8.5pt,
+  9pt,
   letterpaper,
   DIV=11,
   numbers=noendperiod]{scrartcl}
@@ -36,14 +36,28 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 % Make \paragraph and \subparagraph free-standing
+\makeatletter
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
 \fi
 \ifx\subparagraph\undefined\else
   \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
+\makeatother
 
 
 \providecommand{\tightlist}{%
@@ -144,6 +158,7 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
+
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -152,7 +167,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Longfin Inshore Squid () Ecosystem \& Socioeconomic Profile Report Card},
+  pdftitle={Longfin Inshore Squid () Short-form Ecosystem \& Socioeconomic Profile (ESP)},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -160,13 +175,15 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
+
 \title{Longfin Inshore Squid (\protect\textit{Doryteuthis pealeii})
-\linebreak Ecosystem \& Socioeconomic Profile Report Card}
+\linebreak Short-form Ecosystem \& Socioeconomic Profile (ESP)}
 \author{}
 \date{}
 
 \begin{document}
 \maketitle
+
 
 \setstretch{1}
 \backgroundsetup{
@@ -184,6 +201,7 @@
 
 \begin{minipage}{0.57\linewidth}
 
+\vspace{0.50cm}
 \raggedright
 \section{Key Findings from the Life History Working Group}
 
@@ -217,7 +235,8 @@ continental shelf. Fishery observations describe a spatial gradient of
 1-6 cm mantle length (ML) squid from waters south of Hatteras through
 southern New England, with the smallest squid detected further south.
 The Gulf Stream and warm core rings may facilitate the recruitment
-transport of juvenile squid (Richardson WP).
+transport of juvenile squid (Richardson WP),, but potential for inputs
+to the population from the South and offshore are difficult to quantify.
 
 \vspace{0.25cm}
 
@@ -233,14 +252,17 @@ provides evidence of year-round spawning in the stock.
 \subsection{Natural mortality}
 
 Although natural mortality is expected to be age-dependent, lack of
-accurate age data makes further study difficult. Multiple natural
-mortality approximations could be developed to match lifespan
-hypotheses. Intraspecific predation impacts natural mortality, but there
-is no available data to quantify the amount of mortality this causes.
+accurate age data makes further study difficult. Using the equation
+derived by Hamel and Cope (2022), natural mortality for longfin squid
+can range from 0.36 (max. age = 15 mo.) to 0.675 (max. age = 8 mo.).
+Intraspecific predation impacts natural mortality, but there is no
+available data to quantify the amount of mortality this causes.
 
 \vspace{0.25cm}
 
-\includegraphics{C:/Users/abigail.tyrell/Documents/code/longfinESP/images/0521_conceptual_model.png}
+\vspace{0.50cm}
+
+\includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/longfin_life_history_0602.png}
 
 \end{minipage}%
 %
@@ -252,63 +274,46 @@ is no available data to quantify the amount of mortality this causes.
 %
 \begin{minipage}{0.40\linewidth}
 
-\includegraphics{C:/Users/abigail.tyrell/Documents/code/longfinESP/images/squibs_data.png}
+\vspace{0.50cm}
+\section{Age Frequency from SQUIBS}
+
+\includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/squibs_data.png}
 
 \section{Key Points from the Mid-Atlantic Risk Assessment}
 
 \raggedright
 
-In the
+The
 \href{https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf}{2025
-Mid-Atlantic EAFM Risk Assessment Update}, longfin squid scored
-moderate-high risk in the following elements:
+Mid-Atlantic EAFM Risk Assessment Update} determined that there are:
 
 \begin{itemize}
 \tightlist
 \item
-  Moderate-high risk to the stock due to:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    High potential for and observed distribution shifts\\
-  \end{itemize}
+  High potential and observed distribution shifts of longfin squid
 \item
-  Moderate-high risk to the commercial fishery due to:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Risk of not achieving optimum yield due to interactions with
-    non-Council managed species
-  \item
-    Occasional recent changes in regulations; low-moderate regulatory
-    complexity
-  \item
-    Regular, managed discards and incidental catch; moderate discard
-    mortality
-  \end{itemize}
+  Moderate-high risk of not achieving optimum yield due to interactions
+  with non-Council managed species
 \item
-  Moderate-high risk to commercial fishery value
-
-  \begin{itemize}
-  \tightlist
-  \item
-    As it pertains to maximizing commercial fishery value based on net
-    revenue and revenue, cost, and profitability indice findings
-  \end{itemize}
+  Moderate-high risk of regulatory complexity negatively impacting
+  optimum yield due to occasional recent changes in regulations and
+  moderate (3-4) recreational regulation differences across states
 \item
-  Moderate-high risk to Commercial Fishery Resilience -- Fleet Diversity
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Driven by 21 year down-ward trend of the Mid-Atlantic Fleet Count
-    indicator
-  \end{itemize}
+  Moderate-high risk of not minimizing bycatch and discards to the
+  extent practicable due to regular, managed discards and incidental
+  catch and moderate discard mortality
 \end{itemize}
 
-\includegraphics{C:/Users/abigail.tyrell/Documents/code/longfinESP/images/risk_plot_new.png}
+Risk elements are aspects that may threaten achieving the biological,
+economic, or social objectives that the Council desires from a fishery;
+risk to achieving optimal yield.
+
+Longfin squid did not score in the ``high'' risk category for any risk
+elements in 2025.
+
+\vspace{0.25cm}
+
+\includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/risk_plot_new.png}
 
 \end{minipage}%
 
@@ -353,32 +358,32 @@ moderate-high risk in the following elements:
 
 
 
-\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Commercial\ landings\ (millions\ of\ lbs.)
-}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{\linebreak }}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Near\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{An\ increase\ in\ landings\ since\ 2020\ but\ decrease\ in\ number\ of\ vessels\ could\ indicate\ targeted\ trips\ in\ specific\ times\ of\ year\ and\ fishers\ targeting\ other\ species\ when\ longfin\ are\ not\ available.\ High\ variability\ in\ landings\ is\ common\ for\ squid\ fisheries,\ and\ 2024\ commercial\ landings\ fall\ within\ the\ long\ term\ mean.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-1.png}} \\
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Commercial\ landings\ (millions\ of\ lbs.)
+}}}\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{\linebreak }}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Near\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Environmental\ dynamics\ vary\ between\ locations/timing\ of\ the\ summer\ and\ winter\ squid\ fisheries.\ An\ increase\ in\ landings\ since\ 2020\ but\ decrease\ in\ number\ of\ vessels\ could\ indicate\ targeted\ trips\ in\ specific\ times\ of\ year\ and\ fishers\ targeting\ other\ species\ when\ longfin\ are\ not\ available.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-1.png}} \\
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
-\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Number\ of\ commercial\ vessels\ (\#)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Below\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Number\ of\ commercial\ vessels\ has\ been\ steadily\ decreasing\ since\ around\ 2000\ consistent\ with\ decreasing\ fleet\ diversity\ and\ continued\ risk\ to\ fishery\ resilience\ (MAFMC\ FID).}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-2.png}} \\
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Number\ of\ commercial\ vessels\ (\#\ \ of\ federally-permitted\ vessels\ landing\ over\ 1lb\ of\ longfin\ squid)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Below\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Number\ of\ commercial\ vessels\ has\ been\ steadily\ decreasing\ since\ around\ 2000\ consistent\ with\ decreasing\ fleet\ diversity\ and\ continued\ risk\ to\ fishery\ resilience\ (MAFMC\ FID).\ Permit\ requalification\ in\ 2019\ and\ a\ decrease\ in\ the\ incidental\ limit\ for\ trimester\ 2\ resulted\ in\ fishery\ closures\ in\ 2022\ and\ 2023,\ which\ may\ contribute\ to\ decreased\ participation.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-2.png}} \\
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
-\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Commercial\ revenue\ (2024\ USD)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Below\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Average\ Longfin\ ex-vessel\ prices\ in\ 2024\ increased\ slightly\ from\ 2023\ (+10\%),\ but\ commercial\ revenue\ has\ decreased\ from\ 2023\ which\ is\ most\ likely\ driven\ by\ a\ an\ overall\ decrease\ in\ landings\ by\ 23\%\ (MAFMC\ FID).}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-3.png}} \\
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Commercial\ revenue\ (2024\ USD)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Below\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Average\ Longfin\ ex-vessel\ prices\ in\ 2024\ increased\ slightly\ from\ 2023\ (+10\%),\ but\ commercial\ revenue\ has\ decreased\ from\ 2023\ which\ is\ most\ likely\ driven\ by\ a\ an\ overall\ decrease\ in\ landings\ by\ 23\%\ (MAFMC\ FID).}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-3.png}} \\
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
-\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Western\ Gulf\ Stream\ Index\ (shift\ in\ the\ western\ part\ of\ the\ Gulf\ Stream\ North\ wall:\ mean\ position:\ >0\ =\ more\ northerly,\ <0\ =\ more\ southerly)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Above\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Since\ the\ mid-1990s,\ north\ and\ westward\ shifts\ in\ the\ Gulf\ Stream\ have\ resulted\ in\ an\ increase\ in\ warm\ core\ rings\ and\ deep\ water,\ high\ salinity\ heat\ waves.\ The\ position\ of\ the\ Gulf\ Stream\ influences\ seasonal\ temperature\ and\ water\ mass\ mixing\ dynamics\ that\ affect\ longfin\ squid\ habitat\ suitability,\ temperature-dependent\ growth,\ and\ prey\ availability.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-4.png}} \\
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Western\ Gulf\ Stream\ Index\ (shift\ in\ the\ western\ part\ of\ the\ Gulf\ Stream\ North\ wall:\ mean\ position:\ >0\ =\ more\ northerly,\ <0\ =\ more\ southerly)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Above\ long\ term\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Since\ the\ mid-1990s,\ north\ and\ westward\ shifts\ in\ the\ Gulf\ Stream\ have\ resulted\ in\ an\ increase\ in\ warm\ core\ rings\ and\ deep\ water,\ high\ salinity\ heat\ waves.\ The\ position\ of\ the\ Gulf\ Stream\ influences\ seasonal\ temperature\ and\ water\ mass\ mixing\ dynamics\ that\ affect\ longfin\ squid\ habitat\ suitability,\ temperature-dependent\ growth,\ and\ prey\ availability.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{report_card_template_files/figure-pdf/unnamed-chunk-2-4.png}} \\
 
 \ascline{0.75pt}{666666}{1-4}
 
 
 
-\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Bottom\ temperature\ in\ MAB\ and\ SNE(°C)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Above\ long\ term\ average\ (Fall);\ near\ long\ term\ average\ (Spring)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Arial}{Longfin\ squid\ seasonal\ distribution\ and\ growth\ rates\ are\ likely\ temperature\ dependent,\ avoiding\ water\ <8°C.\ Inshore\ temperature\ thresholds\ (around\ 14°C)\ initiate\ migration\ of\ squid\ from\ offshore\ overwintering\ habitats.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1.5in]{report_card_template_files/figure-pdf/unnamed-chunk-2-5.png}} \\
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Bottom\ temperature\ in\ MAB\ and\ SNE(°C)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Above\ long\ term\ average\ (Fall);\ near\ long\ term\ average\ (Spring)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Inshore\ temperature\ thresholds\ (around\ 14°C)\ initiate\ migration\ of\ squid\ from\ offshore\ overwintering\ habitats.\ Longfin\ squid\ seasonal\ distribution\ and\ growth\ rates\ are\ likely\ temperature\ dependent,\ avoiding\ water\ <8°C.\ 2024\ spring\ bottom\ temperatures\ are\ near\ the\ long\ term\ mean,\ however\ cold\ pool\ temperatures\ dipped\ below\ 8°C.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1.5in]{report_card_template_files/figure-pdf/unnamed-chunk-2-5.png}} \\
 
 \ascline{0.75pt}{666666}{1-4}
 
@@ -431,6 +436,7 @@ considerations.
 
 Please contact \url{nefsc.esp.leads@noaa.gov} with any questions or
 comments.
+
 
 
 
