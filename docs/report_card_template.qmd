@@ -15,7 +15,7 @@ format:
     papersize: letter
 params:
   widths: !expr c(0.9, 0.75, 3, 3)
-  img1: !expr here::here("images/0521_conceptual_model.png")
+  img1: !expr here::here("images/longfin_life_history_0602.png")
   img2: !expr here::here("images/risk_plot_new.png")
   img3: !expr here::here("images/squibs_data.png")
   img4: !expr here::here("images/noaa_logo.png")
@@ -60,7 +60,7 @@ In 2024, most stage 4 squid caught in summer with very little mature squid caugh
 \vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
-Recent studies suggest the possibility of a winter cohort that hatches south of Cape Hatteras and subsequently migrates onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid (Richardson WP).
+Recent studies suggest the possibility of a winter cohort that hatches south of Cape Hatteras and subsequently migrates onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid (Richardson WP),, but potential for inputs to the population from the South and offshore are difficult to quantify.
 
 \vspace{0.25cm}
 
@@ -95,18 +95,16 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 
 \raggedright
 <!-- maybe this is being centered because it's the only section without a header? -->
-In the [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf), longfin squid scored moderate-high risk in the following elements:
+The [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf) determined that there are:
+- High potential and observed distribution shifts of longfin squid
+- Moderate-high risk of not achieving optimum yield due to interactions with non-Council managed species
+- Moderate-high risk of regulatory complexity negatively impacting optimum yield due to occasional recent changes in regulations and moderate (3-4) recreational regulation differences across states
+- Moderate-high risk of not minimizing bycatch and discards to the extent practicable due to regular, managed discards and incidental catch and moderate discard mortality
 
-- Moderate-high risk to the stock due to:
-  - High potential for and observed distribution shifts  
-- Moderate-high risk to the commercial fishery due to:
-  - Risk of not achieving optimum yield due to interactions with non-Council managed species
-  - Occasional recent changes in regulations; low-moderate regulatory complexity
-  - Regular, managed discards and incidental catch; moderate discard mortality
-- Moderate-high risk to commercial fishery value 
-  - As it pertains to maximizing commercial fishery value based on net revenue and revenue, cost, and  profitability indice findings 
-- Moderate-high risk to Commercial Fishery Resilience – Fleet Diversity 
-  - Driven by 21 year down-ward trend of the Mid-Atlantic Fleet Count indicator 
+Risk elements are aspects that may threaten achieving the biological, economic, or social objectives that the Council desires from a fishery; risk to achieving optimal yield. 
+
+Longfin squid did not score in the “high” risk category for any risk elements in 2025.
+
 :::
 
 :::{}
