@@ -1,5 +1,5 @@
 ---
-title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\linebreak Short-form Ecosystem & Socioeconomic Profile (ESP)"
+title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\linebreak Ecosystem & Socioeconomic Profile (ESP) Snapshot"
 format: 
   pdf:
     margin-left: "0.25in"
@@ -99,14 +99,14 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 
 \raggedright
 <!-- maybe this is being centered because it's the only section without a header? -->
-The [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf) determined that there are:
+The [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf) determined that there are moderate-high risks of :
 
-- High potential and observed distribution shifts of longfin squid
-- Moderate-high risk of not achieving optimum yield due to interactions with non-Council managed species
-- Moderate-high risk of regulatory complexity negatively impacting optimum yield due to occasional recent changes in regulations and moderate (3-4) recreational regulation differences across states
-- Moderate-high risk of not minimizing bycatch and discards to the extent practicable due to regular, managed discards and incidental catch and moderate discard mortality
+- Potential and observed distribution shifts of longfin squid
+- Not achieving optimum yield due to interactions with non-MAFMC managed species
+- Regulatory complexity negatively impacting optimum yield due to occasional recent changes in regulations and moderate (3-4) recreational regulation differences across states
+- Not minimizing bycatch and discards to the extent practicable due to regular, managed discards and incidental catch and moderate discard mortality
 
-Risk elements are aspects that may threaten achieving the biological, economic, or social objectives that the Council desires from a fishery; risk to achieving optimal yield. 
+Risk elements are aspects that may threaten achieving the biological, economic, or social objectives that the MAFMC desires from a fishery; risk to achieving optimal yield. 
 
 Longfin squid did not score in the “high” risk category for any risk elements in 2025.
 
