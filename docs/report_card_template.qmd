@@ -51,7 +51,7 @@ devtools::load_all(here::here("../READ-EDAB-NEesp2"))
 \section{Key Findings from the Life History Working Group}
 
 \subsection{Lifespan and aging}
-Growth is estimated to be 1 statolith ring/day, per multiple literature sources. Participants at the longfin squid summit estimated a maximum age of 15 months.  Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging  indicates maximum ages of 7 months for females and 8.6 months for males (right) from squid caught in the fishery.
+Growth is estimated to be 1 statolith ring/day, per multiple literature sources. Participants at the longfin squid summit estimated a maximum age of 15 months. Literature review supports a lifespan of less than 1 year. Recent (2024) statolith aging indicates maximum ages of 7 months for females and 8.6 months for males (right) from squid caught in the fishery.
 
 \vspace{0.25cm}
 
@@ -61,7 +61,7 @@ In 2024, most stage 4 squid caught in summer with very little mature squid caugh
 \vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
-Recent studies suggest the possibility of a winter cohort that hatches south of Cape Hatteras and subsequently migrates onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid (Richardson WP),, but potential for inputs to the population from the South and offshore are difficult to quantify.
+Recent studies suggest the possibility of a winter cohort that hatches south of Cape Hatteras and subsequently migrates onto the Northeast U.S. continental shelf. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid (Richardson WP), but potential for inputs to the population from the South and offshore are difficult to quantify.
 
 \vspace{0.25cm}
 
