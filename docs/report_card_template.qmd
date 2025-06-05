@@ -163,6 +163,7 @@ NEesp2::rpt_card_table(data, widths = params$widths) %>%
 
 \vspace{2.0cm}
 
-\centering
-Please contact [nefsc.esp.leads@noaa.gov](nefsc.esp.leads@noaa.gov) with any questions or comments.
+\centering\normalsize
+
+We welcome your observations! Please contact [northeast.ecosystem.highlights@noaa.gov](northeast.ecosystem.highlights@noaa.gov) with any on-the-water insights or changes observed in the black sea bass fishery and [nefsc.esp.leads@noaa.gov](nefsc.esp.leads@noaa.gov) with questions or comments on the information presented in this report.
 :::
