@@ -1,5 +1,5 @@
 ---
-title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\linebreak Ecosystem & Socioeconomic Profile (ESP) Snapshot"
+title: "Longfin Inshore Squid (\\protect\\textit{Doryteuthis pealeii}) \\linebreak Snapshot Ecosystem & Socioeconomic Profile (ESP)"
 format: 
   pdf:
     margin-left: "0.25in"
