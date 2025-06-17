@@ -147,7 +147,7 @@ NEesp2::rpt_card_table(data, widths = params$widths) %>%
 \section{Data Gaps/Uncertainty}
 
 \raggedright
-- Bottom temperature data comes from GLORYS, a modeled re-analysis product not derived from in-situ data.
+- Bottom temperature data comes from GLORYS, a modeled re-analysis product that incorporates insitu data.
 
 \vspace{0.25cm}
 
