@@ -149,25 +149,19 @@ NEesp2::rpt_card_table(data, widths = params$widths) %>%
 \raggedright
 - Bottom temperature data comes from GLORYS, a modeled re-analysis product that incorporates insitu data.
 
-\vspace{0.25cm}
-
 - The Gulf Stream Index indicator is a yearly value and may not be indicative of changes in oceanographic processes on a smaller time scale. 
-
-\vspace{0.25cm}
 
 - While literature generally supports a life span around 1 year, various studies and data indicate a maximum age anywhere between 6 to 15 months. A large range of potential maximum ages creates uncertainty around life history processes, spawning timing, and natural mortality.
 
-\vspace{0.25cm}
-
 - A hypothesis has been proposed regarding longfin squid spawning South of Cape Hatteras in the winter months. While survey data in the 1970s and 80s indicate larval squid in this region that are transported north into the Mid-Atlantic Bight, there is a lack of definitive data to prove this hypothesis. If one assumes this hypothesis is true, further questions arise concerning maximum age and inputs to the population from South Atlantic Bight spawning. 
-
-\vspace{0.25cm}
 
 - Lack of a definitive maximum age of longfin squid affects calculations of natural mortality. Effects of cannibalism on the population are unknown at this time.
 
-\vspace{2.0cm}
+\vspace{1.0cm}
 
 \centering\normalsize
 
-We welcome your observations! Please contact [northeast.ecosystem.highlights@noaa.gov](northeast.ecosystem.highlights@noaa.gov) with any on-the-water insights or changes observed in the black sea bass fishery and [nefsc.esp.leads@noaa.gov](nefsc.esp.leads@noaa.gov) with questions or comments on the information presented in this report.
+We welcome your observations! Please contact [northeast.ecosystem.highlights@noaa.gov](northeast.ecosystem.highlights@noaa.gov) with any on-the-water insights or changes observed in the black sea bass fishery and [nefsc.esp.leads@noaa.gov](nefsc.esp.leads@noaa.gov) with questions or comments on the information presented in this report.\newline
+
+The code used to create this report can be viewed online: [github.com/NEFSC/READ-EDAB-longfinESP](github.com/NEFSC/READ-EDAB/longfinESP) 
 :::
