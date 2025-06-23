@@ -3,14 +3,29 @@ This R project contains the code used to create data, figures, and tables for th
 Folders and files in this repository:
 - `.github` folder: Contains GitHub actions
 - `inputs` folder: Contains indicator time series data (bottom temperature and commercial indicators)
-  - `GLORYS_monthly_BottomT_ECOMON6_1993_2024.csv`
-  - `NES_5REGIONS.shp` 
-  - `SOCIEOECONOMIC_COMMERCIAL_INDICATORS_FINAL.csv`
+  - `GLORYS_monthly_BottomT_ECOMON6_1993_2024.csv`: Raw data for bottom temperature indicator
+  - `NES_5REGIONS.shp`: Shape file for bottom temperature indicator
+  - `SOCIEOECONOMIC_COMMERCIAL_INDICATORS_FINAL.csv`: Raw data for commercial indicators (landings, vessels, revenue)
 - `intermediates` folder: Contains raw or intermediate data files (currently empty for 2026 Snapshot)
 - `outputs` folder: Contains final data files (currently empty for 2026 Snapshot)
 - `docs` folder: Contains Quarto document and associated helper files to generate the Snapshot pdf report
+  - `archive` folder: Contains data and scripts not used in final Snapshot ESP
+  - `2026_readme.txt`: Contains etails on each section in 2026 Snapshot
+  - `bg_pg1.jpg`: JPG file for page 1 background. Need to add to PDF in Adobe
+  - `bg_pg2.jpg`: JPG file for page 2 background. Need to add to PDF in Adobe
+  - `snapshot_template.qmd`: Code to render Snapshot ESP
+  - `snapshot_template.pdf`: Output of rendered quarto doc
+  - `snapshot_template.tex`: Necessary helper file to render Snapshot
+  - `template.tex`: Necessary helper file to render Snapshot
+  - `table_template.xlsx`: Excel file to produce indicator table
 - `images` folder: Contains images of indicator time series and png files for Snaphot
 - `scripts` folder: Contains scripts used to create indicators, plot indicators, and other functions needed to create the snapshot pdf report
+  - `plot_bottomT_indicator.R`: Code to produce and plot bottom temperature indicator
+  - `plot_com_indicators.R`: Code to produce and plot commercial indicators
+  - `plot_gsi_indicator.R`: Code to produce and plot Western GSI indicator 
+  - `plot_indicator_ts.R`: Generic indicator plotting function. Base code for other `plot_xxx_indicator.R` scripts
+  - `plot_risk_longfin.R`: Code to produce risk assessment bar plot
+  - `script_template.R`: Contains a metadata template for scripts
 
 
 #### Legal disclaimer
