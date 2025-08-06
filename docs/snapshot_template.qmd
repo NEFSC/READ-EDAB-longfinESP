@@ -22,6 +22,8 @@ params:
   tbl_file: !expr here::here("docs/table_template.xlsx")
   img_dir: !expr here::here("images")
 latex_engine: xelatex
+bibliography: references.bib
+csl: cambridge-university-press-numeric.csl
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -60,17 +62,17 @@ In 2024, most stage 4 squid caught in summer with very little mature squid caugh
 \vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
-In November/December, longfin migrate from the inshore shelf to deep, warmer slope waters along the shelf edge to overwinter. By May/June of the next year, they migrate back to shallow coastal waters from the MAB to southern New England to spawn (Macy and Brodziak 2001). Recent work hypothesizes the possibility of a winter cohort that hatches south of Cape Hatteras and migrates onto the Northeast shelf (Richardson WP). Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid, but potential for inputs to the population from the South and offshore are difficult to quantify.
+In November/December, longfin migrate from the inshore shelf to deep, warmer slope waters along the shelf edge to overwinter. By May/June of the next year, they migrate back to shallow coastal waters from the MAB to southern New England to spawn [@Macy_Brodziak_2001]. Recent work hypothesizes the possibility of a winter cohort that hatches south of Cape Hatteras and migrates onto the Northeast shelf [@richardson_2026]. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid, but potential for inputs to the population from the South and offshore are difficult to quantify.
 
 \vspace{0.25cm}
 
 \subsection{Reproductive dynamics}
-Spawning peaks inshore from late spring to early summer in the Mid-Atlantic and southern New England (Hatfield and Cadrin 2002; Macy and Brodziak 2001) with hatching in late summer (Jacobson 2005). Consideration of the hypothesis of a winter cohort  spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock.
+Spawning peaks inshore from late spring to early summer in the Mid-Atlantic and southern New England [@Hatfield_Cadrin_2002] [@Macy_Brodziak_2001] with hatching in late summer [@jacobson_2005]. Consideration of the hypothesis of a winter cohort  spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock.
 
 \vspace{0.25cm}
 
 \subsection{Natural mortality}
-Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Using the equation derived by Hamel and Cope (2022), natural mortality for longfin squid can range from 0.36 (max. age = 15 mo.) to 0.675 (max. age = 8 mo.). Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
+Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Using the equation derived by Hamel and Cope [@Hamel_Cope_2022], natural mortality for longfin squid can range from 0.36 (max. age = 15 mo.) to 0.675 (max. age = 8 mo.). Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
 :::
 
 :::{}
@@ -95,7 +97,7 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 
 \raggedright
 <!-- maybe this is being centered because it's the only section without a header? -->
-The [2025 Mid-Atlantic EAFM Risk Assessment Update](https://static1.squarespace.com/static/511cdc7fe4b00307a2628ac6/t/67d45b1680e8654ecaf1b98e/1741970199497/b_Draft+MAB_RiskAssess_2025.pdf) determined that there are moderate-high risks of :
+The 2025 Mid-Atlantic EAFM Risk Assessment Update [@mafmc_midatlantic_2025] determined that there are moderate-high risks of :
 
 - Potential and observed distribution shifts of longfin squid
 - Not achieving optimum yield due to interactions with non-MAFMC managed species
@@ -143,7 +145,7 @@ NEesp2::rpt_card_table(data, widths = params$widths) %>%
 \section{Data Gaps/Uncertainty}
 
 \raggedright
-- Bottom temperature data comes from GLORYS, a modeled re-analysis product that incorporates insitu data.
+- Bottom temperature data comes from GLORYS [@jeanmichel_copernicus_2021], a modeled re-analysis product that incorporates insitu data.
 
 - The Gulf Stream Index indicator is a yearly value and may not be indicative of changes in oceanographic processes on a smaller time scale. 
 
@@ -160,4 +162,11 @@ NEesp2::rpt_card_table(data, widths = params$widths) %>%
 We welcome your observations! Please contact [northeast.ecosystem.highlights@noaa.gov](northeast.ecosystem.highlights@noaa.gov) with any on-the-water insights or changes observed in the black sea bass fishery and [nefsc.esp.leads@noaa.gov](nefsc.esp.leads@noaa.gov) with questions or comments on the information presented in this report.\newline
 
 The code used to create this report can be viewed online: [github.com/NEFSC/READ-EDAB-longfinESP](github.com/NEFSC/READ-EDAB/longfinESP) 
+
+
+\newpage
+\newgeometry{top=1in, left=1in, right=1in, bottom=1in}
+
+# References
+::: {#refs}
 :::
