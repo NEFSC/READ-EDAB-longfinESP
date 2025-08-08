@@ -141,8 +141,11 @@ data <- readxl::read_excel(params$tbl_file) |>
 NEesp2::rpt_card_table(data, widths = params$widths) %>% 
   flextable::font(i = 1:5, j = 1:3, fontname='Times New Roman')
 ```
+\vspace{-0.4cm}
+\centering\footnotesize \* [@mafmc_longfin_2025] = Longfin Squid Fishery Information Document \newline
 
-\section{Data Gaps/Uncertainty}
+
+\normalsize\section{Data Gaps/Uncertainty}
 
 \raggedright
 - Bottom temperature data comes from GLORYS [@jeanmichel_copernicus_2021], a modeled re-analysis product that incorporates insitu data.
@@ -155,7 +158,7 @@ NEesp2::rpt_card_table(data, widths = params$widths) %>%
 
 - Lack of a definitive maximum age of longfin squid affects calculations of natural mortality. Effects of cannibalism on the population are unknown at this time.
 
-\vspace{1.0cm}
+\vspace{0.5cm}
 
 \centering\normalsize
 
