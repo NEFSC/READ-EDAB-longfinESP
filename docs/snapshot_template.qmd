@@ -52,27 +52,27 @@ devtools::load_all(here::here("../READ-EDAB-NEesp2"))
 \section{Key Findings from the Life History Working Group}
 
 \subsection{Lifespan and aging}
-Some literature sources estimate growth to be 1 statolith ring/day, and literature review supports a lifespan of less than 1 year. Participants at the longfin squid summit estimated a maximum age of 15 months. 2024 statolith aging from SQUIBS indicates maximum ages of 7 months for females and 8.6 months for males (right) from squid caught in the fishery.
+Some literature sources estimate growth to be 1 statolith ring/day, and literature review supports a lifespan of less than 1 year. Participants at the longfin squid summit estimated a maximum age of 15 months. SQUIBS statolith aging (2024) indicates maximum ages of 7 months for females and 8.6 months for males (right) from squid caught in the fishery.
 
 \vspace{0.25cm}
 
 \subsection{Maturity (from SQUIBS)}
-In 2024, most stage 4 squid caught in summer with very little mature squid caught the rest of the year. Highest numbers of stage 1 squid were caught in the second half of 2024. Of 912 squid assessed, the dominant maturity stage in females increases from fall to spring. The highest percentage of mature male squid were caught in spring and summer. No stage 4 females and very few stage 1 males were caught.
+For squid caught in 2024, most stage 4 squid were caught in summer and very few the rest of the year. The majority of stage 1 squid were caught in the second half of 2024. Of 912 squid assessed, the dominant maturity stage in females increases from fall to spring. The highest percentage of mature male squid were caught in spring and summer. 
 
 \vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
-In November/December, longfin migrate from the inshore shelf to deep, warmer slope waters along the shelf edge to overwinter. By May/June of the next year, they migrate back to shallow coastal waters from the MAB to southern New England to spawn [@Macy_Brodziak_2001]. Recent work hypothesizes the possibility of a winter cohort that hatches south of Cape Hatteras and migrates onto the Northeast shelf [@richardson_2026]. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid, but potential for inputs to the population from the South and offshore are difficult to quantify.
+In November/December, longfin migrate from the inshore shelf to deep, warm slope waters to overwinter. By May/June of the next year, they migrate back to shallow coastal shelf waters to spawn [@Macy_Brodziak_2001]. The fishery follows this pattern, occurring offshore in winter and inshore in summer. Recent work hypothesizes a winter cohort that hatches south of Cape Hatteras and migrates onto the Northeast shelf [@richardson_2026]. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid, but potential for inputs to the population from the South and offshore are difficult to quantify.
 
 \vspace{0.25cm}
 
 \subsection{Reproductive dynamics}
-Spawning peaks inshore from late spring to early summer in the Mid-Atlantic and southern New England [@Hatfield_Cadrin_2002] [@Macy_Brodziak_2001] with hatching in late summer [@jacobson_2005]. Consideration of the hypothesis of a winter cohort  spawning south of Hatteras indicates the presence of multiple cohorts of longfin squid, with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning in the stock.
+Spawning peaks inshore from late spring to early summer in the Mid-Atlantic and southern New England [@Hatfield_Cadrin_2002] [@Macy_Brodziak_2001] with hatching in late summer [@jacobson_2005]. Consideration of the hypothesis of a winter cohort  spawning south of Hatteras indicates the presence of multiple cohorts with some outside of the traditional Northeast shelf stock area, and provides evidence of year-round spawning.
 
 \vspace{0.25cm}
 
 \subsection{Natural mortality}
-Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Using the equation derived by Hamel and Cope [@Hamel_Cope_2022], natural mortality for longfin squid can range from 0.36 (max. age = 15 mo.) to 0.675 (max. age = 8 mo.). Intraspecific predation impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
+Although natural mortality is expected to be age-dependent, lack of accurate age data makes further study difficult. Using the equation derived by Hamel and Cope [@Hamel_Cope_2022], natural mortality for longfin squid can range from 0.36 (max. age = 15 mo.) to 0.675 (max. age = 8 mo.). Cannibalism impacts natural mortality, but there is no available data to quantify the amount of mortality this causes.
 :::
 
 :::{}
@@ -96,13 +96,12 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 \section{Key Points from the Mid-Atlantic Risk Assessment}
 
 \raggedright
-<!-- maybe this is being centered because it's the only section without a header? -->
-The 2025 Mid-Atlantic EAFM Risk Assessment Update [@mafmc_midatlantic_2025] determined that there are moderate-high risks of :
+The 2025 Mid-Atlantic EAFM Risk Assessment Update [@mafmc_midatlantic_2025] determined that there are moderate-high risks related to:
 
 - Potential and observed distribution shifts of longfin squid
 - Not achieving optimum yield due to interactions with non-MAFMC managed species
-- Regulatory complexity negatively impacting optimum yield due to occasional recent changes in regulations and moderate (3-4) recreational regulation differences across states
-- Not minimizing bycatch and discards to the extent practicable due to regular, managed discards and incidental catch and moderate discard mortality
+- Regulatory complexity: occasional recent changes in regulations and moderate (3-4) recreational regulation differences across states. Compliance is challenging for fishery participants given complex regulations.
+- Discards: While various management measures have minimized discards to the extent practicable, ecosystem changes may affect existing measures.
 
 Risk elements are aspects that may threaten achieving the biological, economic, or social objectives that the MAFMC desires from a fishery; risk to achieving optimal yield. 
 
@@ -152,12 +151,11 @@ NEesp2::rpt_card_table(data, widths = params$widths) %>%
 
 - The Gulf Stream Index indicator is a yearly value and may not be indicative of changes in oceanographic processes on a smaller time scale. 
 
-- While literature generally supports a life span around 1 year, various studies and data indicate a maximum age anywhere between 6 to 15 months. A large range of potential maximum ages creates uncertainty around life history processes, spawning timing, and natural mortality.
+- Aging uncertainty creates uncertainty around life history processes, spawning location and timing, and natural mortality.
 
-- A hypothesis has been proposed regarding longfin squid spawning South of Cape Hatteras in the winter months. While survey data in the 1970s and 80s indicate larval squid in this region that are transported north into the Mid-Atlantic Bight, there is a lack of definitive data to prove this hypothesis. If one assumes this hypothesis is true, further questions arise concerning maximum age and inputs to the population from South Atlantic Bight spawning. 
+- While survey data in the 1970s and 80s indicate larval squid south of Cape Hatteras in the winter months that are transported north into the Mid-Atlantic Bight, there is a lack of definitive data to prove this hypothesis. 
 
-- Lack of a definitive maximum age of longfin squid affects calculations of natural mortality. Effects of cannibalism on the population are unknown at this time.
-
+- Effects of cannibalism on the population are unknown at this time. 
 \vspace{0.5cm}
 
 \centering\normalsize
