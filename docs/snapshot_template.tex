@@ -1,4 +1,5 @@
 % Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
@@ -8,22 +9,23 @@
   letterpaper,
   DIV=11,
   numbers=noendperiod]{scrartcl}
-
+\usepackage{xcolor}
+\usepackage[lmargin=0.25in,rmargin=0.25in,tmargin=0in,bmargin=0.25in]{geometry}
 \usepackage{amsmath,amssymb}
-\usepackage{setspace}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
 \usepackage{lmodern}
-\ifPDFTeX\else  
-    % xetex/luatex font selection
+\ifPDFTeX\else
+  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -31,10 +33,7 @@
   \usepackage[]{microtype}
   \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\usepackage{xcolor}
-\usepackage[lmargin=0.25in,rmargin=0.25in,tmargin=0in,bmargin=0.25in]{geometry}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{setspace}
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -60,8 +59,7 @@
 \makeatother
 
 
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -73,17 +71,21 @@
 \makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
+
+
 % definitions for citeproc citations
 \NewDocumentCommand\citeproctext{}{}
 \NewDocumentCommand\citeproc{mm}{%
@@ -118,6 +120,18 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
 \usepackage[pages=some]{background}
 % \usepackage{blindtext}
 \usepackage[fontsize=8.5pt]{fontsize}
@@ -141,6 +155,7 @@
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{colortbl}
+\usepackage{ulem}
 \usepackage{hhline}
 \newlength\Oldarrayrulewidth
 \newlength\Oldtabcolsep
@@ -191,14 +206,9 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage{bookmark}
-
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
+\urlstyle{same}
 \hypersetup{
   pdftitle={Longfin Inshore Squid () Snapshot Ecosystem \& Socioeconomic Profile (ESP)},
   colorlinks=true,
@@ -213,7 +223,6 @@
 \linebreak Snapshot Ecosystem \& Socioeconomic Profile (ESP)}
 \author{}
 \date{}
-
 \begin{document}
 \maketitle
 
@@ -294,7 +303,7 @@ can range from 0.36 (max. age = 15 mo.) to 0.675 (max. age = 8 mo.).
 Cannibalism impacts natural mortality, but there is no available data to
 quantify the amount of mortality this causes.
 
-\includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/longfin_life_history_0602.png}
+\pandocbounded{\includegraphics[keepaspectratio]{C:/Users/stephanie.owen/Documents/longfinESP/images/longfin_life_history_0602.png}}
 
 \end{minipage}%
 %
@@ -309,7 +318,7 @@ quantify the amount of mortality this causes.
 \vspace{0.50cm}
 \section{Age Frequency from SQUIBS}
 
-\includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/squibs_data.png}
+\pandocbounded{\includegraphics[keepaspectratio]{C:/Users/stephanie.owen/Documents/longfinESP/images/squibs_data.png}}
 
 \section{Key Points from the Mid-Atlantic Risk Assessment}
 
@@ -345,7 +354,7 @@ elements in 2025.
 
 \vspace{0.25cm}
 
-\includegraphics{C:/Users/stephanie.owen/Documents/longfinESP/images/risk_plot_new.png}
+\pandocbounded{\includegraphics[keepaspectratio]{C:/Users/stephanie.owen/Documents/longfinESP/images/risk_plot_new.png}}
 
 \end{minipage}%
 
@@ -415,7 +424,7 @@ elements in 2025.
 
 
 
-\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Western\ Gulf\ Stream\ Index\ (shift\ in\ the\ western\ part\ of\ the\ Gulf\ Stream\ North\ wall:\ mean\ position:\ >0\ =\ more\ northerly,\ <0\ =\ more\ southerly)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Above\ long\ term\ (1996-2024)\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Since\ the\ mid-1990s,\ north\ and\ westward\ shifts\ in\ the\ Gulf\ Stream\ have\ resulted\ in\ an\ increase\ in\ warm\ core\ rings\ and\ deep\ water,\ high\ salinity\ heat\ waves.\ The\ position\ of\ the\ Gulf\ Stream\ influences\ seasonal\ temperature\ and\ water\ mass\ mixing\ dynamics\ that\ affect\ longfin\ squid\ habitat\ suitability,\ temperature-dependent\ growth,\ and\ prey\ availability\ (https://noaa-edab.github.io/catalog/gsi.html).}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{snapshot_template_files/figure-pdf/unnamed-chunk-2-4.png}} \\
+\multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.9in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Western\ Gulf\ Stream\ Index\ (shift\ in\ the\ western\ part\ of\ the\ Gulf\ Stream\ North\ wall:\ mean\ position:\ >0\ =\ more\ northerly,\ <0\ =\ more\ southerly)}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Near\ long\ term\ (1996-2025)\ average}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Times New Roman}{Since\ the\ mid-1990s,\ north\ and\ westward\ shifts\ in\ the\ Gulf\ Stream\ have\ resulted\ in\ an\ increase\ in\ warm\ core\ rings\ and\ deep\ water,\ high\ salinity\ heat\ waves.\ The\ position\ of\ the\ Gulf\ Stream\ influences\ seasonal\ temperature\ and\ water\ mass\ mixing\ dynamics\ that\ affect\ longfin\ squid\ habitat\ suitability,\ temperature-dependent\ growth,\ and\ prey\ availability\ (https://noaa-edab.github.io/catalog/gsi.html).}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3in+0\tabcolsep}!{\color[HTML]{666666}\vrule width 0.75pt}}{\includegraphics[width=3in, height=1in]{snapshot_template_files/figure-pdf/unnamed-chunk-2-4.png}} \\
 
 \ascline{0.75pt}{666666}{1-4}
 
