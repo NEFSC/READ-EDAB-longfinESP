@@ -5,6 +5,7 @@
 
 ### Author: Stephanie Owen
 ### Date started: 3/31/25
+### Updated with 2025 data: 2/25/26
 
 ### Code reviewer:
 ### Date reviewed:
@@ -15,7 +16,9 @@
 # Data ----
 
 ### read data and modify df for landings, vessels, and revenue
-data <- read.csv(here::here('inputs/SOCIEOECONOMIC_COMMERCIAL_INDICATORS_FINAL.csv'))
+#data <- read.csv(here::here('inputs/SOCIEOECONOMIC_COMMERCIAL_INDICATORS_FINAL.csv')) old 2024 data
+data <- read.csv(here::here('inputs/LONGFINSQUID_Commercial_Indicators_Master_2025.csv')) #new 2025 data
+
 
 landings <- data %>%
   dplyr::filter (INDICATOR_NAME == 'Commercial_LONGFINSQUID_Landings_LBS') %>%
@@ -27,7 +30,7 @@ vessels <- data %>%
   dplyr::arrange(YEAR)
 
 revenue <- data %>%
-  dplyr::filter(INDICATOR_NAME == 'TOTALANNUALREV_LONGFINSQUID_2024Dols') %>%
+  dplyr::filter(INDICATOR_NAME == 'TOTALANNUALREV_LONGFINSQUID_2025Dols') %>%
   dplyr::mutate(DATA_VALUE = DATA_VALUE/10^6) #scales from millions/lbs
 
 # Analyses ----
@@ -62,8 +65,8 @@ plt_indicator <- function(data) {
     ggplot2::geom_path() +
     ggplot2::xlim(c(1996, 2023)) +
     ggplot2::scale_y_continuous(labels = scales::comma) +
-    ggplot2::scale_x_continuous(breaks = c(2000, 2010, 2020, 2024),
-                                limits = c(1996, 2024)) +
+    ggplot2::scale_x_continuous(breaks = c(2000, 2010, 2020, 2025),
+                                limits = c(1996, 2025)) +
     ggplot2::theme_classic(base_size = 16) +
     ggplot2::theme(strip.text = ggplot2::element_text(size = 16),
                    axis.title = ggplot2::element_blank(),
