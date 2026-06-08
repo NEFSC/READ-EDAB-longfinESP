@@ -70,8 +70,8 @@ plt_bt <- function(data) {
     ggplot2::geom_point() +
     ggplot2::geom_path() +
     # ggplot2::xlim(c(1989, 2024)) +
-    ggplot2::scale_x_continuous(breaks = c(1996, 2000, 2010, 2020, 2024),
-                                limits = c(1996, 2024)) +
+    ggplot2::scale_x_continuous(breaks = c(1996, 2000, 2010, 2020, 2023),
+                                limits = c(1996, 2023)) +
     ggplot2::scale_y_continuous(labels = scales::comma) +
     ggplot2::theme_classic(base_size = 16) +
     ggplot2::theme(strip.text = ggplot2::element_text(size = 16),

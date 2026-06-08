@@ -5,7 +5,7 @@ format:
     margin-left: "0.25in"
     margin-right: "0.25in"
     margin-top: "0in"
-    margin-bottom: "0.25in"
+    margin-bottom: "0in"
     fontsize: "9pt"
     linestretch: 1
     indent: true
@@ -52,18 +52,17 @@ devtools::load_all(here::here("../READ-EDAB-NEesp2"))
 \section{Key Findings from the Life History Working Group}
 
 \subsection{Lifespan and aging}
-Some literature sources estimate growth to be 1 statolith ring/day, and literature review supports a lifespan of less than 1 year. Participants at the longfin squid summit estimated a maximum age of 15 months. SQUIBS statolith aging (2023-2025) indicates a maximum age of 264 days from squid caught in the fishery.
+Some literature sources estimate growth to be 1 statolith ring/day, and literature review supports a lifespan of less than 1 year. Participants at the Longfin Inshore Squid Summit estimated a maximum age of 15 months. Statolith aging from the Squid Biological Sampling Program (SQUIBS; 2023-2025) indicates a maximum age of 264 days from squid caught in the fishery.
 
 \vspace{0.25cm}
 
 \subsection{Maturity (from SQUIBS)}
-<!-- placeholder. maturity section of WP hasn't been written yet 04/07 -->
-For squid caught in 2024, most stage 4 squid were caught in summer and very few the rest of the year. The majority of stage 1 squid were caught in the second half of 2024. The dominant maturity stage in females increases from fall to spring, while the highest percentage of mature male squid were caught in spring and summer. 
+For squid caught in 2024, most stage 4 squid were caught in summer and very few the rest of the year. The majority of stage 1 squid were caught in the second half of 2024. The dominant maturity stage in females increased from fall to spring, while the highest percentage of mature male squid were caught in spring and summer. 
 
 \vspace{0.25cm}
 
 \subsection{Migration and movement dynamics}
-In November/December, longfin migrate from the inshore shelf to deep, warm slope waters to overwinter. By May/June of the next year, they migrate back to shallow coastal shelf waters to spawn [@Macy_Brodziak_2001]. The fishery follows this pattern, occurring offshore in winter and inshore in summer. Recent work hypothesizes a winter cohort that hatches south of Cape Hatteras and migrates onto the Northeast shelf [@richardson_2026]. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid, but potential for inputs to the population from the South and offshore are difficult to quantify.
+In November/December, longfin squid migrate from the inshore shelf to deep, warm slope waters to overwinter. By May/June of the next year, they migrate back to shallow coastal shelf waters to spawn [@Macy_Brodziak_2001]. The fishery follows this pattern, occurring offshore in winter and inshore in summer. Recent work hypothesizes a winter cohort that hatches south of Cape Hatteras and migrates onto the Northeast shelf [@richardson_2026]. Fishery observations describe a spatial gradient of 1-6 cm mantle length (ML) squid from waters south of Hatteras through southern New England, with the smallest squid detected further south. The Gulf Stream and warm core rings may facilitate the recruitment transport of juvenile squid, but potential for inputs to the population from the South and offshore are difficult to quantify.
 
 \vspace{0.25cm}
 
@@ -97,14 +96,14 @@ Although natural mortality is expected to be age-dependent, lack of accurate age
 \section{Key Points from the Mid-Atlantic Risk Assessment}
 
 \raggedright
-The 2025 Mid-Atlantic EAFM Risk Assessment Update [@mafmc_midatlantic_2025] determined that there are moderate-high risks related to:
+The Mid-Atlantic Fishery Management Council (MAFMC) Ecosystem Approach to Fisheries Management (EAFM) Update [@mafmc_midatlantic_2025] determined that there are moderate-high risks related to:
 
 - Potential and observed distribution shifts of longfin squid
 - Not achieving optimum yield due to interactions with non-MAFMC managed species
 - Regulatory complexity: occasional recent changes in regulations and moderate (3-4) recreational regulation differences across states. Compliance is challenging for fishery participants given complex regulations.
 - Discards: While various management measures have minimized discards to the extent practicable, ecosystem changes may affect existing measures.
 
-Risk elements are aspects that may threaten achieving the biological, economic, or social objectives that the MAFMC desires from a fishery; risk to achieving optimal yield. 
+Risk elements are aspects that may threaten achieving the biological, economic, or social objectives to achieving optimal yield that the MAFMC desires from a fishery.
 
 Longfin squid did not score in the “high” risk category for any risk elements in 2025.
 
@@ -149,7 +148,7 @@ NEesp2::rpt_card_table(data, widths = params$widths) %>%
 \raggedright
 - Bottom temperature data comes from GLORYS [@jeanmichel_copernicus_2021], a modeled re-analysis product that incorporates insitu data.
 
-- The Gulf Stream Index indicator is a yearly value and may not be indicative of changes in oceanographic processes on a smaller time scale. 
+- The Western Gulf Stream Index indicator is a yearly value and may not be indicative of changes in oceanographic processes on a smaller time scale. 
 
 - Aging uncertainty creates uncertainty around life history processes, spawning location and timing, and natural mortality.
 
